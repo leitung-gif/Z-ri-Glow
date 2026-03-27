@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZÜRI GLOW Beauty Studio | Premium Hautpflege & Kosmetik in Zürich Altstetten</title>
+    <meta name="description" content="ZÜRI GLOW – Ihr exklusives Beauty Studio in Zürich Altstetten. Professionelle Hautpflege, ästhetische Gesichtsbehandlungen, Anti-Aging & Glow Treatments. Jetzt Termin buchen!">
+    <meta name="keywords" content="Beauty Studio Zürich, Kosmetik Zürich, Hautpflege Zürich, Gesichtsbehandlung Zürich, Anti-Aging Zürich, Beauty Behandlung Altstetten, Kosmetikstudio Zürich, Glow Treatment, Facial Zürich, Hautverjüngung Zürich, Skincare Zürich">
+    <meta name="author" content="Züri Glow Beauty Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zuriglow.ch/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ZÜRI GLOW Beauty Studio | Premium Hautpflege in Zürich">
+    <meta property="og:description" content="Exklusives Beauty Studio in Zürich Altstetten. Professionelle Hautpflege, ästhetische Behandlungen und natürliche Schönheit. Erleben Sie den Züri Glow Unterschied.">
+    <meta property="og:image" content="https://zuriglow.ch/assets/logo.png">
+    <meta property="og:url" content="https://zuriglow.ch/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_CH">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "ZÜRI GLOW Beauty Studio",
+        "image": "https://zuriglow.ch/assets/logo.png",
+        "url": "https://zuriglow.ch",
+        "telephone": "+41765827005",
+        "email": "info@zuriglow.ch",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Eugenhuberstrasse 53",
+            "addressLocality": "Zürich",
+            "postalCode": "8048",
+            "addressRegion": "ZH",
+            "addressCountry": "CH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "47.3769",
+            "longitude": "8.4879"
+        },
+        "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:30", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:30", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:30", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:30", "closes": "20:00"}
+        ],
+        "priceRange": "$$",
+        "description": "ZÜRI GLOW Beauty Studio in Zürich Altstetten bietet professionelle Hautpflege, ästhetische Gesichtsbehandlungen und individuelle Glow Treatments. Modernste Methoden für strahlend schöne Haut.",
+        "areaServed": {
+            "@type": "City",
+            "name": "Zürich"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <img src="assets/logo.png" alt="Züri Glow Logo" class="preloader-logo">
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <header id="main-header" class="header">
+        <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+            <a href="#hero" class="nav-logo" aria-label="Züri Glow – Zurück zur Startseite">
+                <img src="assets/logo.png" alt="Züri Glow Beauty Studio Logo" class="nav-logo-img">
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Über Uns</a></li>
+                <li><a href="#treatments" class="nav-link" data-section="treatments">Behandlungen</a></li>
+                <li><a href="#studio" class="nav-link" data-section="studio">Studio</a></li>
+                <li><a href="#preise" class="nav-link" data-section="preise">Preise</a></li>
+                <li><a href="#kontakt" class="nav-link" data-section="kontakt">Kontakt</a></li>
+            </ul>
+
+            <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="nav-cta" id="nav-book-btn">Termin Buchen</a>
+
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero" class="mobile-nav-link" data-index="0">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link" data-index="1">Über Uns</a></li>
+                <li><a href="#treatments" class="mobile-nav-link" data-index="2">Behandlungen</a></li>
+                <li><a href="#studio" class="mobile-nav-link" data-index="3">Studio</a></li>
+                <li><a href="#preise" class="mobile-nav-link" data-index="4">Preise</a></li>
+                <li><a href="#kontakt" class="mobile-nav-link" data-index="5">Kontakt</a></li>
+            </ul>
+            <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="mobile-nav-cta">Termin Buchen</a>
+            <div class="mobile-nav-social">
+                <a href="https://www.instagram.com/zuri_glow_" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@zuriglow" target="_blank" rel="noopener" aria-label="TikTok">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.3a8.18 8.18 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.73z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-particles" id="hero-particles"></div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge reveal-up">
+                        <span class="hero-badge-dot"></span>
+                        Beauty Studio Zürich
+                    </div>
+                    <h1 class="hero-title reveal-up" style="animation-delay: 0.15s">
+                        Entdecken Sie Ihren<br>
+                        <span class="hero-title-accent">natürlichen Glow</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-up" style="animation-delay: 0.3s">
+                        Exklusive Hautpflege und ästhetische Behandlungen in Zürich Altstetten. 
+                        Mit modernsten Methoden und individuell abgestimmten Treatments sorgen wir 
+                        für strahlende Ergebnisse und ein Hautgefühl, das begeistert.
+                    </p>
+                    <div class="hero-actions reveal-up" style="animation-delay: 0.45s">
+                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary" id="hero-book-btn">
+                            <span>Jetzt Termin Buchen</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#treatments" class="btn btn-ghost" id="hero-treatments-btn">
+                            <span>Behandlungen Entdecken</span>
+                        </a>
+                    </div>
+                    <div class="hero-trust reveal-up" style="animation-delay: 0.6s">
+                        <div class="hero-trust-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <span>5.0 Google Bewertung</span>
+                        </div>
+                        <div class="hero-trust-divider"></div>
+                        <div class="hero-trust-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            <span>100+ zufriedene Kundinnen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-scale" style="animation-delay: 0.2s">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="assets/hero-beauty.png" alt="Professionelle Hautpflege Behandlung im Züri Glow Beauty Studio Zürich" class="hero-image" width="600" height="750" loading="eager">
+                        </div>
+                        <div class="hero-image-accent"></div>
+                        <div class="hero-float-card hero-float-card-1">
+                            <div class="hero-float-icon">✨</div>
+                            <div>
+                                <strong>Glow Treatment</strong>
+                                <span>Sofort sichtbare Ergebnisse</span>
+                            </div>
+                        </div>
+                        <div class="hero-float-card hero-float-card-2">
+                            <div class="hero-float-icon">🌿</div>
+                            <div>
+                                <strong>Natürliche Pflege</strong>
+                                <span>Premium Produkte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span>Entdecken</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="about-image-wrapper reveal-left">
+                            <img src="assets/glow-portrait.png" alt="Züri Glow Beauty Expertin – strahlende Haut durch professionelle Kosmetikbehandlung" class="about-image" width="560" height="700" loading="lazy">
+                            <div class="about-image-overlay"></div>
+                        </div>
+                        <div class="about-experience-badge reveal-up" style="animation-delay: 0.3s">
+                            <span class="about-exp-number">Zürich</span>
+                            <span class="about-exp-text">Altstetten</span>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-label reveal-up">Über Züri Glow</span>
+                        <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                            Wo Schönheit auf<br>
+                            <em>Schweizer Präzision</em> trifft
+                        </h2>
+                        <div class="about-text reveal-up" style="animation-delay: 0.2s">
+                            <p>
+                                Willkommen bei <strong>ZÜRI GLOW</strong> – Ihrem exklusiven Beauty Studio im Herzen von Zürich Altstetten. 
+                                Als erfahrene Beauty-Expertin mit einem Hintergrund im professionellen Modeling verbinde ich 
+                                ein tiefes Verständnis für ästhetische Schönheit mit modernsten Kosmetikbehandlungen.
+                            </p>
+                            <p>
+                                Jede Behandlung wird individuell auf Ihre Haut abgestimmt. Mein Ziel ist es, 
+                                Ihre natürliche Schönheit hervorzuheben und Ihnen ein strahlendes, gesundes 
+                                Hautbild zu schenken – mit sichtbaren Ergebnissen ab der ersten Sitzung.
+                            </p>
+                        </div>
+
+                        <div class="about-values reveal-up" style="animation-delay: 0.3s">
+                            <div class="about-value">
+                                <div class="about-value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Individuell</h3>
+                                    <p>Jede Behandlung wird persönlich auf Ihren Hauttyp und Ihre Wünsche abgestimmt.</p>
+                                </div>
+                            </div>
+                            <div class="about-value">
+                                <div class="about-value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Premium Qualität</h3>
+                                    <p>Ausschliesslich hochwertige Produkte und modernste Behandlungsmethoden.</p>
+                                </div>
+                            </div>
+                            <div class="about-value">
+                                <div class="about-value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Mit Leidenschaft</h3>
+                                    <p>Schönheit ist unsere Passion – das spüren Sie bei jeder Behandlung.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section id="treatments" class="treatments section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-up">Unsere Behandlungen</span>
+                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                        Exklusive Beauty<br>
+                        <em>Treatments</em> für Sie
+                    </h2>
+                    <p class="section-desc reveal-up" style="animation-delay: 0.2s">
+                        Entdecken Sie unser umfassendes Angebot an professionellen Hautpflege- und Kosmetikbehandlungen. 
+                        Jedes Treatment wird mit höchster Sorgfalt und modernsten Techniken durchgeführt.
+                    </p>
+                </div>
+
+                <div class="treatments-grid">
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.1s" id="treatment-facial">
+                        <div class="treatment-card-image">
+                            <img src="assets/treatment-closeup.png" alt="Professionelle Gesichtsbehandlung im Züri Glow Beauty Studio" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">01</div>
+                            <h3>Gesichtsbehandlung</h3>
+                            <p>Intensive Pflege für Ihr Gesicht mit tiefenreinigenden und nährenden Wirkstoffen. Individuelle Analyse für optimale Ergebnisse und einen strahlenden Teint.</p>
+                            <ul class="treatment-features">
+                                <li>Tiefenreinigung & Peeling</li>
+                                <li>Individualisierte Masken</li>
+                                <li>Hautanalyse inklusive</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.2s" id="treatment-antiaging">
+                        <div class="treatment-card-image">
+                            <img src="assets/glow-portrait.png" alt="Anti-Aging Behandlung für jugendliche Haut in Zürich" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">02</div>
+                            <h3>Anti-Aging Treatment</h3>
+                            <p>Fortschrittliche Anti-Aging Methoden für eine sichtbar jüngere, straffere Haut. Kollagenfördernde Techniken und hochkonzentrierte Wirkstoffe.</p>
+                            <ul class="treatment-features">
+                                <li>Faltenreduktion</li>
+                                <li>Kollagen-Boost</li>
+                                <li>Hautverjüngung</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.3s" id="treatment-glow">
+                        <div class="treatment-card-image">
+                            <img src="assets/hero-beauty.png" alt="Glow Booster Behandlung für strahlende Haut" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">03</div>
+                            <h3>Glow Booster</h3>
+                            <p>Unser Signature Treatment für sofort sichtbar leuchtende Haut. Vitamin C, Hyaluronsäure und spezielle Glow-Seren für den ultimativen Strahleffekt.</p>
+                            <ul class="treatment-features">
+                                <li>Sofortiger Glow-Effekt</li>
+                                <li>Vitamin C Infusion</li>
+                                <li>Hyaluron-Boost</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.4s" id="treatment-hydra">
+                        <div class="treatment-card-image">
+                            <img src="assets/products-display.png" alt="Hydra Facial Feuchtigkeitsbehandlung in Zürich" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">04</div>
+                            <h3>Hydra Facial</h3>
+                            <p>Intensive Feuchtigkeitsbehandlung für trockene und dehydrierte Haut. Mehrschichtige Hydratation für ein prall-frisches, jugendliches Hautbild.</p>
+                            <ul class="treatment-features">
+                                <li>Tiefenhydratation</li>
+                                <li>Feuchtigkeitsbarriere</li>
+                                <li>Prall-frischer Teint</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="treatments-cta reveal-up" style="animation-delay: 0.3s">
+                    <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary" id="treatments-book-btn">
+                        <span>Alle Behandlungen Entdecken</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio Section -->
+        <section id="studio" class="studio section">
+            <div class="container">
+                <div class="studio-grid">
+                    <div class="studio-content">
+                        <span class="section-label reveal-up">Unser Studio</span>
+                        <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                            Eine Oase der<br>
+                            <em>Ruhe & Schönheit</em>
+                        </h2>
+                        <p class="section-desc reveal-up" style="animation-delay: 0.2s">
+                            Treten Sie ein in eine Welt der Entspannung. Unser Studio in Zürich Altstetten 
+                            verbindet modernes Design mit einer warmen, einladenden Atmosphäre – der perfekte 
+                            Ort, um sich verwöhnen zu lassen und dem Alltag zu entfliehen.
+                        </p>
+
+                        <div class="studio-features reveal-up" style="animation-delay: 0.3s">
+                            <div class="studio-feature">
+                                <div class="studio-feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Zentrale Lage</h3>
+                                    <p>Einfach erreichbar in Zürich Altstetten, nur wenige Gehminuten vom Bahnhof.</p>
+                                </div>
+                            </div>
+                            <div class="studio-feature">
+                                <div class="studio-feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="4"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Modernste Ausstattung</h3>
+                                    <p>Professionelle Geräte und Premium-Produkte für beste Behandlungsergebnisse.</p>
+                                </div>
+                            </div>
+                            <div class="studio-feature">
+                                <div class="studio-feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Persönliche Betreuung</h3>
+                                    <p>Exklusive Einzelbehandlungen – bei uns stehen Sie im Mittelpunkt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="studio-visual">
+                        <div class="studio-image-grid reveal-right">
+                            <div class="studio-image-main">
+                                <img src="assets/studio-interior.png" alt="Züri Glow Beauty Studio Interieur – modernes Kosmetikstudio in Zürich Altstetten" width="560" height="400" loading="lazy">
+                            </div>
+                            <div class="studio-image-secondary">
+                                <img src="assets/products-display.png" alt="Premium Pflegeprodukte im Züri Glow Beauty Studio" width="260" height="260" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prices Section -->
+        <section id="preise" class="preise section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-up">Preise</span>
+                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                        Transparente<br>
+                        <em>Preisgestaltung</em>
+                    </h2>
+                    <p class="section-desc reveal-up" style="animation-delay: 0.2s">
+                        Investieren Sie in Ihre Schönheit mit unseren sorgfältig zusammengestellten Behandlungen. 
+                        Auch kurzfristige Termine sind möglich – kontaktieren Sie uns einfach.
+                    </p>
+                </div>
+
+                <div class="preise-grid">
+                    <div class="preise-card reveal-up" style="animation-delay: 0.1s" id="price-klassik">
+                        <div class="preise-card-header">
+                            <h3>Klassische Gesichtspflege</h3>
+                            <p>Die perfekte Basispflege für jeden Hauttyp</p>
+                        </div>
+                        <div class="preise-card-price">
+                            <span class="preise-currency">CHF</span>
+                            <span class="preise-amount">120</span>
+                        </div>
+                        <ul class="preise-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Hautanalyse & Beratung
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Tiefenreinigung
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Pflegende Maske
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                ca. 60 Minuten
+                            </li>
+                        </ul>
+                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-outline" id="price-klassik-btn">Termin Buchen</a>
+                    </div>
+
+                    <div class="preise-card preise-card-featured reveal-up" style="animation-delay: 0.2s" id="price-glow">
+                        <div class="preise-card-badge">Beliebteste</div>
+                        <div class="preise-card-header">
+                            <h3>Glow Treatment</h3>
+                            <p>Unser Signature Treatment für maximalen Glow</p>
+                        </div>
+                        <div class="preise-card-price">
+                            <span class="preise-currency">CHF</span>
+                            <span class="preise-amount">180</span>
+                        </div>
+                        <ul class="preise-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Alles aus Klassik
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Vitamin C Infusion
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Hyaluron-Boost
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                LED-Lichttherapie
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                ca. 90 Minuten
+                            </li>
+                        </ul>
+                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary" id="price-glow-btn">Termin Buchen</a>
+                    </div>
+
+                    <div class="preise-card reveal-up" style="animation-delay: 0.3s" id="price-premium">
+                        <div class="preise-card-header">
+                            <h3>Premium Anti-Aging</h3>
+                            <p>Das ultimative Luxus-Treatment</p>
+                        </div>
+                        <div class="preise-card-price">
+                            <span class="preise-currency">CHF</span>
+                            <span class="preise-amount">250</span>
+                        </div>
+                        <ul class="preise-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Alles aus Glow Treatment
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Anti-Aging Serum
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Kollagen-Behandlung
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Gesichts- & Halsmassage
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                ca. 120 Minuten
+                            </li>
+                        </ul>
+                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-outline" id="price-premium-btn">Termin Buchen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Marquee -->
+        <section class="testimonials-section" aria-label="Kundenbewertungen">
+            <div class="testimonials-marquee">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Meine Haut hat noch nie so gestrahlt! Absolut empfehlenswert.»</p>
+                        <span>— Sarah M., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Professionell, einfühlsam und sichtbare Ergebnisse ab der ersten Behandlung.»</p>
+                        <span>— Lisa K., Altstetten</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Das beste Beauty Studio in Zürich! Fühle mich jedes Mal wie neugeboren.»</p>
+                        <span>— Anna R., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Die Glow Behandlung ist ein absoluter Traum. Meine Haut liebt es!»</p>
+                        <span>— Maria T., Oerlikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Endlich ein Studio, das auf meine Hautbedürfnisse wirklich eingeht.»</p>
+                        <span>— Julia S., Wipkingen</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Meine Haut hat noch nie so gestrahlt! Absolut empfehlenswert.»</p>
+                        <span>— Sarah M., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Professionell, einfühlsam und sichtbare Ergebnisse ab der ersten Behandlung.»</p>
+                        <span>— Lisa K., Altstetten</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Das beste Beauty Studio in Zürich! Fühle mich jedes Mal wie neugeboren.»</p>
+                        <span>— Anna R., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Die Glow Behandlung ist ein absoluter Traum. Meine Haut liebt es!»</p>
+                        <span>— Maria T., Oerlikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Endlich ein Studio, das auf meine Hautbedürfnisse wirklich eingeht.»</p>
+                        <span>— Julia S., Wipkingen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="kontakt section">
+            <div class="container">
+                <div class="kontakt-grid">
+                    <div class="kontakt-info">
+                        <span class="section-label reveal-up">Kontakt</span>
+                        <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                            Bereit für Ihren<br>
+                            <em>Glow-Moment?</em>
+                        </h2>
+                        <p class="section-desc reveal-up" style="animation-delay: 0.2s">
+                            Buchen Sie jetzt Ihren Termin und erleben Sie den Unterschied. 
+                            Wir freuen uns, Sie in unserem Beauty Studio in Zürich Altstetten 
+                            persönlich willkommen zu heissen.
+                        </p>
+
+                        <div class="kontakt-details reveal-up" style="animation-delay: 0.3s">
+                            <div class="kontakt-detail" id="contact-address">
+                                <div class="kontakt-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Adresse</strong>
+                                    <p>Eugenhuberstrasse 53<br>8048 Zürich (Altstetten)</p>
+                                </div>
+                            </div>
+                            <div class="kontakt-detail" id="contact-phone">
+                                <div class="kontakt-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Telefon</strong>
+                                    <a href="tel:+41765827005">076 582 70 05</a>
+                                </div>
+                            </div>
+                            <div class="kontakt-detail" id="contact-email">
+                                <div class="kontakt-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <strong>E-Mail</strong>
+                                    <a href="mailto:info@zuriglow.ch">info@zuriglow.ch</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kontakt-hours reveal-up" style="animation-delay: 0.4s">
+                            <h3>Öffnungszeiten</h3>
+                            <div class="kontakt-hours-grid">
+                                <div class="kontakt-hour">
+                                    <span>Montag</span>
+                                    <span>10:30 – 20:00</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Dienstag</span>
+                                    <span>Nur auf Termin</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Mittwoch</span>
+                                    <span>10:30 – 20:00</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Donnerstag</span>
+                                    <span class="closed">Geschlossen</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Freitag</span>
+                                    <span>10:30 – 20:00</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Samstag</span>
+                                    <span>10:30 – 20:00</span>
+                                </div>
+                                <div class="kontakt-hour">
+                                    <span>Sonntag</span>
+                                    <span class="closed">Geschlossen</span>
+                                </div>
+                            </div>
+                            <p class="kontakt-hours-note">✨ Auch kurzfristige Termine möglich!</p>
+                        </div>
+
+                        <div class="kontakt-social reveal-up" style="animation-delay: 0.5s">
+                            <span>Folgen Sie uns:</span>
+                            <div class="kontakt-social-links">
+                                <a href="https://www.instagram.com/zuri_glow_" target="_blank" rel="noopener" aria-label="Instagram" class="social-link" id="social-instagram">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@zuriglow" target="_blank" rel="noopener" aria-label="TikTok" class="social-link" id="social-tiktok">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.3a8.18 8.18 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.73z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kontakt-map reveal-right" style="animation-delay: 0.2s">
+                        <div class="kontakt-map-wrapper" id="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.8!2d8.4879!3d47.3769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDIyJzM2LjgiTiA4wrAyOScxNi40IkU!5e0!3m2!1sde!2sch!4v1234567890"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Züri Glow Beauty Studio Standort auf Google Maps"
+                            ></iframe>
+                        </div>
+                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary kontakt-book-btn" id="contact-book-btn">
+                            <span>Jetzt Termin Buchen</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Züri Glow Beauty Studio" class="footer-logo" width="80" height="80" loading="lazy">
+                    <p>Ihr exklusives Beauty Studio für professionelle Hautpflege und ästhetische Behandlungen in Zürich Altstetten.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#about">Über Uns</a></li>
+                        <li><a href="#treatments">Behandlungen</a></li>
+                        <li><a href="#preise">Preise</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Behandlungen</h4>
+                    <ul>
+                        <li><a href="#treatment-facial">Gesichtsbehandlung</a></li>
+                        <li><a href="#treatment-antiaging">Anti-Aging</a></li>
+                        <li><a href="#treatment-glow">Glow Booster</a></li>
+                        <li><a href="#treatment-hydra">Hydra Facial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="tel:+41765827005">076 582 70 05</a></li>
+                        <li><a href="mailto:info@zuriglow.ch">info@zuriglow.ch</a></li>
+                        <li>Eugenhuberstrasse 53</li>
+                        <li>8048 Zürich</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZÜRI GLOW Beauty Studio. Alle Rechte vorbehalten.</p>
+                <p class="footer-credit">Designed by <a href="https://loriengroup.ch" target="_blank" rel="noopener">Lorien Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
