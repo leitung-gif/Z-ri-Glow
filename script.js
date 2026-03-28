@@ -256,4 +256,164 @@ document.addEventListener('DOMContentLoaded', () => {
             testimonialTrack.style.animationPlayState = 'running';
         });
     }
+
+    // ─── Instagram Feed Slider ───
+    const igTrack = document.getElementById('ig-slider-track');
+    const igViewport = document.getElementById('ig-slider-viewport');
+    const igPrev = document.getElementById('ig-slider-prev');
+    const igNext = document.getElementById('ig-slider-next');
+    const igDotsContainer = document.getElementById('ig-slider-dots');
+
+    if (igTrack && igViewport) {
+        const slides = igTrack.querySelectorAll('.ig-slide');
+        let currentSlide = 0;
+        let slidesPerView = 3;
+        let isDragging = false;
+        let startX = 0;
+        let dragOffset = 0;
+        let currentTranslate = 0;
+        let autoSlideInterval;
+
+        function getSlidesPerView() {
+            const w = window.innerWidth;
+            if (w <= 480) return 1;
+            if (w <= 768) return 2;
+            return 3;
+        }
+
+        function getMaxSlide() {
+            return Math.max(0, slides.length - slidesPerView);
+        }
+
+        function getSlideWidth() {
+            if (slides.length === 0) return 0;
+            const gap = parseFloat(getComputedStyle(igTrack).gap) || 16;
+            const viewportWidth = igViewport.offsetWidth;
+            return (viewportWidth - (slidesPerView - 1) * gap) / slidesPerView + gap;
+        }
+
+        function goToSlide(index) {
+            currentSlide = Math.max(0, Math.min(index, getMaxSlide()));
+            const slideWidth = getSlideWidth();
+            currentTranslate = -currentSlide * slideWidth;
+            igTrack.style.transform = `translateX(${currentTranslate}px)`;
+            updateDots();
+            updateArrows();
+        }
+
+        function updateArrows() {
+            if (igPrev) igPrev.disabled = currentSlide === 0;
+            if (igNext) igNext.disabled = currentSlide >= getMaxSlide();
+        }
+
+        // Create dots
+        function createDots() {
+            if (!igDotsContainer) return;
+            igDotsContainer.innerHTML = '';
+            const totalDots = getMaxSlide() + 1;
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('ig-slider-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', `Slide ${i + 1}`);
+                dot.addEventListener('click', () => {
+                    goToSlide(i);
+                    resetAutoSlide();
+                });
+                igDotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            if (!igDotsContainer) return;
+            const dots = igDotsContainer.querySelectorAll('.ig-slider-dot');
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        // Arrow events
+        if (igPrev) igPrev.addEventListener('click', () => { goToSlide(currentSlide - 1); resetAutoSlide(); });
+        if (igNext) igNext.addEventListener('click', () => { goToSlide(currentSlide + 1); resetAutoSlide(); });
+
+        // Drag/Swipe support
+        function onDragStart(x) {
+            isDragging = true;
+            startX = x;
+            dragOffset = 0;
+            igTrack.classList.add('dragging');
+        }
+
+        function onDragMove(x) {
+            if (!isDragging) return;
+            dragOffset = x - startX;
+            igTrack.style.transform = `translateX(${currentTranslate + dragOffset}px)`;
+        }
+
+        function onDragEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            igTrack.classList.remove('dragging');
+
+            const threshold = getSlideWidth() * 0.25;
+            if (dragOffset < -threshold) {
+                goToSlide(currentSlide + 1);
+            } else if (dragOffset > threshold) {
+                goToSlide(currentSlide - 1);
+            } else {
+                goToSlide(currentSlide);
+            }
+            resetAutoSlide();
+        }
+
+        // Mouse events
+        igViewport.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            onDragStart(e.clientX);
+        });
+        window.addEventListener('mousemove', (e) => onDragMove(e.clientX));
+        window.addEventListener('mouseup', onDragEnd);
+
+        // Touch events
+        igViewport.addEventListener('touchstart', (e) => onDragStart(e.touches[0].clientX), { passive: true });
+        igViewport.addEventListener('touchmove', (e) => onDragMove(e.touches[0].clientX), { passive: true });
+        igViewport.addEventListener('touchend', onDragEnd);
+
+        // Auto-slide
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                if (currentSlide >= getMaxSlide()) {
+                    goToSlide(0);
+                } else {
+                    goToSlide(currentSlide + 1);
+                }
+            }, 4000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Pause auto-slide on hover
+        igViewport.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        igViewport.addEventListener('mouseleave', startAutoSlide);
+
+        // Handle resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                slidesPerView = getSlidesPerView();
+                createDots();
+                goToSlide(Math.min(currentSlide, getMaxSlide()));
+            }, 200);
+        });
+
+        // Initialize
+        slidesPerView = getSlidesPerView();
+        createDots();
+        updateArrows();
+        startAutoSlide();
+    }
 });
