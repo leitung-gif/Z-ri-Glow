@@ -1133,52 +1133,95 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     pointer-events: none;
 }
 
-.preise-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xl);
-    position: relative;
-}
-
-.preise-card {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(200, 168, 233, 0.1);
-    border-radius: var(--border-radius-lg);
-    padding: var(--space-2xl);
-    text-align: center;
-    transition: all var(--transition-base);
-    position: relative;
+/* Price Tabs */
+.price-tabs {
     display: flex;
-    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-2xl);
+    position: relative;
 }
 
-.preise-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-elevated);
+.price-tab {
+    padding: 10px 22px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(200, 168, 233, 0.12);
+    border-radius: 50px;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-warm-gray);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
 }
 
-.preise-card-featured {
+.price-tab:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--color-charcoal);
+    border-color: var(--color-lavender-light);
+}
+
+.price-tab.active {
+    background: var(--color-charcoal);
+    color: var(--color-cream);
+    border-color: var(--color-charcoal);
+}
+
+/* Price Panels */
+.price-panels { position: relative; }
+
+.price-panel {
+    display: none;
+    animation: panelFadeIn 0.4s var(--ease-out-expo);
+}
+
+.price-panel.active { display: block; }
+
+@keyframes panelFadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Price Groups */
+.price-group {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 168, 233, 0.1);
+    border-radius: var(--border-radius);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.price-group-featured {
     background: var(--color-charcoal);
     color: var(--color-cream);
     border-color: transparent;
-    transform: scale(1.05);
-    box-shadow: var(--shadow-elevated);
 }
 
-.preise-card-featured:hover {
-    transform: scale(1.05) translateY(-6px);
+.price-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
-.preise-card-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 6px 20px;
+.price-group-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.price-badge {
+    padding: 4px 14px;
     background: var(--gradient-gold);
     color: var(--color-charcoal);
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -1186,84 +1229,120 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     white-space: nowrap;
 }
 
-.preise-card-header h3 {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.preise-card-header p {
+.price-group-desc {
     font-size: 0.85rem;
-    opacity: 0.6;
-    margin-bottom: var(--space-xl);
+    color: var(--color-soft-gray);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
 }
 
-.preise-card-price {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: var(--space-xl);
-    padding-bottom: var(--space-xl);
-    border-bottom: 1px solid rgba(200, 168, 233, 0.15);
+.price-group-featured .price-group-desc {
+    color: rgba(253, 250, 246, 0.6);
 }
 
-.preise-card-featured .preise-card-price {
-    border-bottom-color: rgba(255, 255, 255, 0.15);
-}
-
-.preise-currency {
-    font-size: 0.9rem;
-    font-weight: 400;
-    opacity: 0.6;
-}
-
-.preise-amount {
-    font-family: var(--font-display);
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.preise-features {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: var(--space-2xl);
-    text-align: left;
-    flex-grow: 1;
-}
-
-.preise-features li {
+/* Price Rows */
+.price-row {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(200, 168, 233, 0.08);
+    gap: var(--space-md);
+}
+
+.price-row:last-child { border-bottom: none; }
+
+.price-group-featured .price-row {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.price-row span {
     font-size: 0.88rem;
+    color: var(--color-warm-gray);
 }
 
-.preise-features svg {
-    flex-shrink: 0;
-    color: var(--color-gold);
+.price-group-featured .price-row span {
+    color: rgba(253, 250, 246, 0.75);
 }
 
-.preise-card-featured .preise-features svg {
+.price-row strong {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--color-charcoal);
+}
+
+.price-group-featured .price-row strong {
     color: var(--color-gold-light);
 }
 
-.preise-card-featured .btn-primary {
-    background: var(--color-cream);
-    color: var(--color-charcoal);
-    border-color: var(--color-cream);
+.price-row-abo {
+    background: rgba(197, 165, 90, 0.06);
+    margin: 0 calc(var(--space-xl) * -1);
+    padding: 10px var(--space-xl);
+    border-bottom-color: rgba(197, 165, 90, 0.1);
 }
 
-.preise-card-featured .btn-primary:hover {
-    box-shadow: var(--shadow-gold);
+.price-group-featured .price-row-abo {
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.preise-card .btn-outline {
-    border-color: var(--color-soft-gray);
+.price-row-abo span::before {
+    content: '📦 ';
+    font-size: 0.75rem;
+}
+
+.price-note {
+    font-size: 0.8rem;
+    color: var(--color-soft-gray);
+    text-align: center;
+    font-style: italic;
+    margin-top: var(--space-lg);
+}
+
+.preise-cta {
+    text-align: center;
+    margin-top: var(--space-2xl);
+}
+
+/* Treatment card badge */
+.treatment-card-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 5px 14px;
+    background: var(--gradient-gold);
     color: var(--color-charcoal);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .price-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .price-tabs::-webkit-scrollbar { display: none; }
+    .price-tab { font-size: 0.72rem; padding: 8px 16px; }
+}
+
+@media (max-width: 480px) {
+    .price-group { padding: var(--space-md); }
+    .price-row-abo {
+        margin: 0 calc(var(--space-md) * -1);
+        padding: 10px var(--space-md);
+    }
 }
 
 /* ═══════════════════════════════════════════════════════════════

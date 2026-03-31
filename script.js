@@ -257,6 +257,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ─── Price Tabs ───
+    const priceTabs = document.querySelectorAll('.price-tab');
+    const pricePanels = document.querySelectorAll('.price-panel');
+
+    priceTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.dataset.tab;
+            priceTabs.forEach(t => t.classList.remove('active'));
+            pricePanels.forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            const panel = document.querySelector(`.price-panel[data-panel="${target}"]`);
+            if (panel) panel.classList.add('active');
+        });
+    });
+
     // ─── Instagram Feed Slider ───
     const igTrack = document.getElementById('ig-slider-track');
     const igViewport = document.getElementById('ig-slider-viewport');
