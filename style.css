@@ -1734,23 +1734,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
     /* Brighter mobile gradient — eliminate dark purple edges */
     .hero-bg-gradient {
-        background: linear-gradient(180deg, #FFFCF7 0%, #F8F0FB 30%, #FDF5EE 60%, #FFFCF7 100%);
+        background: linear-gradient(180deg, #FFFCF7 0%, #FAF5FE 50%, #FFFCF7 100%);
     }
     .hero-bg-gradient::before {
-        opacity: 0.4;
-        width: 80%;
+        display: none;
     }
     .hero-bg-gradient::after {
-        opacity: 0.3;
-        width: 70%;
+        display: none;
+    }
+    .hero-particles {
+        display: none;
     }
 
-    /* Lighten all sections on mobile */
-    .about { background: var(--color-white); }
-    .treatments { background: var(--color-white); }
-    .studio { background: var(--color-white); }
-    .preise { background: var(--color-white); }
-    .preise::before { opacity: 0.3; }
+    /* Force white/bright backgrounds on all sections */
+    body { background-color: #FFFFFF; }
+    .about { background: #FFFFFF; }
+    .treatments { background: #FFFFFF; }
+    .treatments::before { display: none; }
+    .studio { background: #FFFFFF; }
+    .preise { background: #FFFFFF; }
+    .preise::before { display: none; }
+    .kontakt { background: #FFFFFF; }
+    .instagram-section { background: #FFFFFF; }
+    .testimonials-section { background: #FEFBF8; }
+    .testimonials-section::before,
+    .testimonials-section::after { display: none; }
+    .instagram-section::before { display: none; }
 
     .treatments-grid { grid-template-columns: 1fr; }
 
