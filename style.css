@@ -2133,3 +2133,102 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     background-repeat: repeat;
     background-size: 256px;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   WHATSAPP FLOATING WIDGET
+   ═══════════════════════════════════════════════════════════════ */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4), 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: wa-pulse 2.5s ease-in-out infinite;
+}
+.whatsapp-widget:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 4px 24px rgba(37, 211, 102, 0.6), 0 0 0 8px rgba(37, 211, 102, 0.1); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER CERTIFICATION BADGES
+   ═══════════════════════════════════════════════════════════════ */
+.footer-cert-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+.footer-cert-text strong {
+    color: var(--color-gold);
+    font-weight: 600;
+}
+.footer-cert-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.vnissg-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 10px 20px;
+    background: rgba(212, 173, 90, 0.08);
+    border: 1px solid rgba(212, 173, 90, 0.25);
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+}
+.vnissg-badge:hover {
+    border-color: rgba(212, 173, 90, 0.5);
+}
+.vnissg-badge strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    letter-spacing: 1px;
+}
+.vnissg-badge span {
+    display: block;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* SGMK badge larger */
+.sgmk-badge img {
+    height: 80px;
+    transition: opacity 0.3s ease;
+}
+.sgmk-badge:hover img {
+    opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-widget {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+    }
+    .footer-cert-badges {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
