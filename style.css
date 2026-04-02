@@ -1785,6 +1785,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     .testimonials-section { background: #FEFBF8; }
     .testimonials-section::before,
     .testimonials-section::after { display: none; }
+
+    /* Fix transparent review cards on mobile */
+    .testimonial-item {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        width: 300px;
+    }
+    .testimonial-item p {
+        color: #4A4045;
+    }
+    .testimonial-item span {
+        color: #8A7F85;
+    }
+    .testimonial-stars {
+        color: #D4AD5A;
+    }
+
     .instagram-section::before { display: none; }
 
     .treatments-grid { grid-template-columns: 1fr; }
