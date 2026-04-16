@@ -1040,7 +1040,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .treatment-card:hover {
-    transform: translateY(-3px);
     box-shadow: var(--shadow-magenta);
     border-color: var(--color-magenta);
 }
@@ -1059,7 +1058,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .treatment-card:hover .treatment-card-image img {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .treatment-card-overlay {
@@ -1744,8 +1743,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 0.25rem;
     padding-top: var(--space-xl);
     font-size: 0.78rem;
     color: var(--color-soft-gray);
