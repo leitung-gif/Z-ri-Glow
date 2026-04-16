@@ -97,23 +97,21 @@ body {
     line-height: 1.7;
     color: var(--color-charcoal);
     background: linear-gradient(180deg,
-        #D0A0E0 0%,
-        #E0C0F0 3%,
-        #F0D8F8 6%,
-        #FFF0F5 10%,
-        #FFF5F0 15%,
-        #FFF0FA 20%,
-        #F8EEFF 28%,
-        #FFF5F0 35%,
-        #FFEEF8 42%,
-        #F5F0FF 50%,
-        #FFF0F5 58%,
-        #FFF8F0 65%,
-        #F8EEFF 72%,
-        #FFF0F5 80%,
-        #F5EEFF 88%,
-        #2D1640 95%,
-        #1A0E28 100%
+        #F5E6FF 0%,
+        #EDD0F8 5%,
+        #FFF0F5 12%,
+        #FFF5F0 18%,
+        #FFF0FA 25%,
+        #F8EEFF 32%,
+        #FFF5F0 40%,
+        #FFEEF8 48%,
+        #F5F0FF 55%,
+        #FFF0F5 63%,
+        #FFF8F0 70%,
+        #F8EEFF 78%,
+        #FFF0F5 85%,
+        #F5EEFF 92%,
+        #F0E8FA 100%
     );
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
@@ -2397,4 +2395,89 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ═══════════════════════════════════════════════════════════════ */
 .instagram-section {
     background: transparent !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER — Solid dark background (overrides body gradient)
+   ═══════════════════════════════════════════════════════════════ */
+.footer {
+    background: linear-gradient(180deg, #2D1640 0%, #1A0E28 100%) !important;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    z-index: 1;
+}
+
+.footer a,
+.footer p,
+.footer li,
+.footer h4,
+.footer span {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.footer a:hover {
+    color: var(--color-gold) !important;
+}
+
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Social icons in contact section — force visible */
+.kontakt-social-links .social-link {
+    color: var(--color-magenta) !important;
+    border-color: var(--color-magenta) !important;
+}
+
+.kontakt-social-links .social-link svg {
+    stroke: var(--color-magenta) !important;
+    fill: none !important;
+}
+
+.kontakt-social-links .social-link:nth-child(2) svg {
+    fill: var(--color-magenta) !important;
+    stroke: none !important;
+}
+
+.kontakt-social-links .social-link:nth-child(3) svg {
+    fill: var(--color-magenta) !important;
+    stroke: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TESTIMONIALS — Remove edge gradient masks
+   ═══════════════════════════════════════════════════════════════ */
+.testimonials-marquee::before,
+.testimonials-marquee::after {
+    display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE — Hide hero image, adjust layout
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .hero-visual {
+        display: none !important;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-trust {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Remove body gradient leaking into footer area */
+body::after {
+    content: none;
 }
