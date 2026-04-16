@@ -2300,12 +2300,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .testimonials-section {
     background: transparent;
     padding: var(--space-2xl) 0;
-    overflow: hidden;
+    overflow: visible;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
 }
 
 .testimonials-marquee {
     overflow: hidden;
     position: relative;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+}
+
+.testimonials-marquee::before,
+.testimonials-marquee::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
 }
 
 .testimonials-track {
