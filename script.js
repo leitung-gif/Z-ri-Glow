@@ -432,3 +432,42 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoSlide();
     }
 });
+
+/* ═══════════════════════════════════════════════════════════════
+   COOKIE CONSENT BANNER
+   ═══════════════════════════════════════════════════════════════ */
+(function() {
+    const banner = document.getElementById('cookie-consent');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const declineBtn = document.getElementById('cookie-decline');
+
+    if (!banner) return;
+
+    // Check if user already made a choice
+    const consent = localStorage.getItem('zg-cookie-consent');
+    if (consent) {
+        banner.classList.add('hidden');
+        return;
+    }
+
+    // Show banner after a short delay
+    setTimeout(function() {
+        banner.classList.add('visible');
+    }, 1500);
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('zg-cookie-consent', 'accepted');
+            banner.classList.remove('visible');
+            banner.classList.add('hidden');
+        });
+    }
+
+    if (declineBtn) {
+        declineBtn.addEventListener('click', function() {
+            localStorage.setItem('zg-cookie-consent', 'declined');
+            banner.classList.remove('visible');
+            banner.classList.add('hidden');
+        });
+    }
+})();

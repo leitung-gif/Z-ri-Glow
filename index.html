@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Züri Glow Beauty Studio Zürich Altstetten | Kosmetik, Microneedling & PMU</title>
+    <title>Züri Glow | Kosmetikstudio Zürich Altstetten</title>
     <meta name="description" content="Züri Glow – dein Kosmetikstudio in Zürich Altstetten. Hydrafacial, Microneedling, PMU, Massagen & Waxing. V-NISSG zertifiziert. Über 60 Behandlungen. ☎ 076 582 70 05">
     <meta name="keywords" content="Kosmetikstudio Zürich, Beauty Studio Altstetten, Gesichtsbehandlung Zürich, Hydrafacial Zürich, Microneedling Zürich, Permanent Make-up Zürich, PMU Zürich, Anti-Aging Zürich, Hautpflege Zürich, Waxing Zürich, Massage Zürich Altstetten, Kosmetikerin Zürich, SGMK Kosmetik, BB Glow Zürich, Chemical Peeling Zürich, Aknebehandlung Zürich, Braut Make-up Zürich, V-NISSG zertifiziert, Kosmetik Altstetten">
     <meta name="author" content="Züri Glow Beauty Studio">
@@ -77,11 +77,10 @@
             "longitude": 8.4879
         },
         "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:30", "closes": "20:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:30", "closes": "20:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:30", "closes": "20:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:30", "closes": "20:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:30", "closes": "20:00"}
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "19:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "19:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "18:00"}
         ],
         "priceRange": "CHF 30 – CHF 420",
         "currenciesAccepted": "CHF",
@@ -160,7 +159,7 @@
                 "name": "Was sind die Öffnungszeiten von Züri Glow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Mo, Mi, Fr: 10:30–20:00 Uhr. Di: nur auf Termine. Sa: 10:30–20:00 Uhr (Termine erwünscht). Do & So: geschlossen. Auch kurzfristige Termine sind telefonisch oder per WhatsApp möglich unter 076 582 70 05."
+                    "text": "Montag & Mittwoch: 10:00–19:00 Uhr. Freitag: 10:00–20:00 Uhr. Samstag: 10:00–18:00 Uhr. Dienstag, Donnerstag & Sonntag: geschlossen. Auch kurzfristige Termine sind telefonisch oder per WhatsApp möglich unter 076 582 70 05."
                 }
             },
             {
@@ -175,8 +174,36 @@
     }
     </script>
 
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://zuriglow.ch/#website",
+        "name": "Züri Glow Beauty Studio",
+        "url": "https://zuriglow.ch/",
+        "publisher": {"@id": "https://zuriglow.ch/#organization"},
+        "inLanguage": "de-CH"
+    }
+    </script>
+
+    <!-- Structured Data: Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "Züri Glow Signature Ritual", "description": "Luxusbehandlung für Gesicht, Hals & Dekolleté mit Tiefenreinigung, Radiofrequenz, Ultraschall und LED Lichttherapie.", "provider": {"@id": "https://zuriglow.ch/#organization"}, "offers": {"@type": "Offer", "price": "240", "priceCurrency": "CHF"}}},
+            {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "Hydra / Aquafacial", "description": "Tiefenreinigung, Peeling und Ausreinigung mit Ultraschall-Wirkstoffeinschleusung und LED Lichttherapie.", "provider": {"@id": "https://zuriglow.ch/#organization"}, "offers": {"@type": "Offer", "price": "150", "priceCurrency": "CHF"}}},
+            {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "Microneedling", "description": "Feine Mikronadeln regen die natürliche Kollagen- und Elastinproduktion an für straffere, glattere Haut.", "provider": {"@id": "https://zuriglow.ch/#organization"}, "offers": {"@type": "Offer", "price": "150", "priceCurrency": "CHF"}}},
+            {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "Permanent Make-up", "description": "Hochpräzise Pigmentierung für Augenbrauen, Lippen und Lidstrich.", "provider": {"@id": "https://zuriglow.ch/#organization"}, "offers": {"@type": "Offer", "price": "350", "priceCurrency": "CHF"}}},
+            {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "Klassische Massage", "description": "Ganzkörpermassage mit warmen Ölen für tiefe Entspannung.", "provider": {"@id": "https://zuriglow.ch/#organization"}, "offers": {"@type": "Offer", "price": "130", "priceCurrency": "CHF"}}}
+        ]
+    }
+    </script>
+
     <!-- Preload critical resources -->
-    <link rel="preload" href="assets/hero-beauty.png" as="image">
+    <link rel="preload" href="assets/hero-beauty.webp" as="image" type="image/webp">
     <link rel="preload" href="assets/logo.png" as="image">
 
     <!-- Fonts -->
@@ -184,9 +211,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
+
+    <!-- Google Analytics 4 — Replace G-XXXXXXXXXX with your Measurement ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
 </head>
 <body>
+
+    <!-- Skip Navigation (Accessibility) -->
+    <a href="#main-content" class="skip-nav" id="skip-nav">Zum Inhalt springen</a>
 
     <!-- Preloader -->
     <div id="preloader" class="preloader">
@@ -251,7 +290,7 @@
         </div>
     </div>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-bg-gradient"></div>
@@ -302,7 +341,7 @@
                 <div class="hero-visual reveal-scale" style="animation-delay: 0.2s">
                     <div class="hero-image-wrapper">
                         <div class="hero-image-frame">
-                            <img src="assets/studio-mirror.jpg" alt="Züri Glow Beauty Studio – Blumentor und Empfang mit LED-Beleuchtung in Zürich Altstetten" class="hero-image" width="600" height="750" loading="eager">
+                            <img src="assets/studio-mirror.webp" alt="Züri Glow Beauty Studio – Blumentor und Empfang mit LED-Beleuchtung in Zürich Altstetten" class="hero-image" width="600" height="750" loading="eager">
                         </div>
                         <div class="hero-image-accent"></div>
                         <div class="hero-float-card hero-float-card-1">
@@ -335,7 +374,7 @@
                 <div class="about-grid">
                     <div class="about-visual">
                         <div class="about-image-wrapper reveal-left">
-                            <img src="assets/studio-exterior.jpg" alt="Züri Glow Beauty Studio Eingang – Kosmetikstudio in Zürich Altstetten" class="about-image" width="560" height="700" loading="lazy">
+                            <img src="assets/studio-exterior.webp" alt="Züri Glow Beauty Studio Eingang – Kosmetikstudio in Zürich Altstetten" class="about-image" width="560" height="700" loading="lazy">
                             <div class="about-image-overlay"></div>
                         </div>
                         <div class="about-experience-badge reveal-up" style="animation-delay: 0.3s">
@@ -398,6 +437,93 @@
         </section>
 
         <!-- Treatments Section -->
+        <section id="treatments" class="treatments section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-up">Unsere Behandlungen</span>
+                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                        Exklusive Beauty<br>
+                        <em>Treatments</em> für dich
+                    </h2>
+                    <p class="section-desc reveal-up" style="animation-delay: 0.2s">
+                        Von luxuriösen Gesichtsbehandlungen über Microneedling bis hin zu entspannenden Massagen – 
+                        entdecke über 60 professionelle Treatments für deine Schönheit.
+                    </p>
+                </div>
+
+                <div class="treatments-grid">
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.1s" id="treatment-signature">
+                        <div class="treatment-card-image">
+                            <img src="assets/treatment-signature.webp" alt="Züri Glow Signature Ritual – Premium Gold Gesichtspflege Produkte" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                            <div class="treatment-card-badge">Signature</div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">01</div>
+                            <h3>Züri Glow Signature Ritual</h3>
+                            <p>Unsere luxuriöse Komplettbehandlung für Gesicht, Hals &amp; Dekolleté. Tiefenreinigung, Ausreinigung, Hochfrequenz, Radiofrequenz, Ultraschall, LED Lichttherapie und individuell abgestimmte Wirkstoffe sorgen für maximale Hauterneuerung, sichtbare Straffung und einen unvergleichlichen Glow.</p>
+                            <ul class="treatment-features">
+                                <li>105–115 Min · CHF 240</li>
+                                <li>Maximale Hauterneuerung &amp; Straffung</li>
+                                <li>Individuelle Wirkstoffe für deinen Hauttyp</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.2s" id="treatment-hydra">
+                        <div class="treatment-card-image">
+                            <img src="assets/treatment-hydrafacial.webp" alt="Hydra Aquafacial Gerät – Professionelle Tiefenreinigung" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">02</div>
+                            <h3>Hydra / Aquafacial</h3>
+                            <p>Unsere beliebteste Behandlung: Tiefenreinigung, Peeling und Ausreinigung kombiniert mit Ultraschall-Wirkstoffeinschleusung und LED Lichttherapie. Das Ergebnis ist ein klares, frisches und strahlendes Hautbild – sofort sichtbar. Auch als Deluxe-Version mit intensiven Seren und erweiterter Pflege erhältlich.</p>
+                            <ul class="treatment-features">
+                                <li>60–90 Min · ab CHF 150</li>
+                                <li>Ultraschall-Wirkstoffeinschleusung</li>
+                                <li>Auch als Deluxe ab CHF 180</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.3s" id="treatment-microneedling">
+                        <div class="treatment-card-image">
+                            <img src="assets/treatment-microneedling.webp" alt="Microneedling Dermapen – Professionelle Hautverfeinerung" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">03</div>
+                            <h3>Microneedling &amp; BB Glow</h3>
+                            <p>Mit feinen Nadeln wird die natürliche Kollagenbildung angeregt und die Hautstruktur nachhaltig verbessert. Ideal für Anti-Aging, Narben, Dehnungsstreifen und einen ebenmässigen Teint. Auch als Bio Microneedling mit Spongilla-Spicules für eine natürliche Intensivbehandlung verfügbar.</p>
+                            <ul class="treatment-features">
+                                <li>60–120 Min · ab CHF 150</li>
+                                <li>Gesicht, Hals, Dekolleté &amp; Körper</li>
+                                <li>Bio Microneedling &amp; BB Glow</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal-up" style="animation-delay: 0.4s" id="treatment-body">
+                        <div class="treatment-card-image">
+                            <img src="assets/treatment-massage.webp" alt="Hot Stone Massage und Wellness Zubehör" width="400" height="300" loading="lazy">
+                            <div class="treatment-card-overlay"></div>
+                        </div>
+                        <div class="treatment-card-content">
+                            <div class="treatment-card-number">04</div>
+                            <h3>Body &amp; Massage</h3>
+                            <p>Entspannung für Körper und Seele: Unsere klassische Ganzkörpermassage, die wärmende Hot Stone Massage und die aktivierende Madero Therapie mit Holzinstrumenten sorgen für tiefe Muskelentspannung, Durchblutungsförderung und sichtbare Körperstraffung.</p>
+                            <ul class="treatment-features">
+                                <li>60–120 Min · ab CHF 130</li>
+                                <li>Hot Stone &amp; Madero Therapie</li>
+                                <li>Waxing Damen &amp; Herren</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Prices Section -->
         <section id="preise" class="preise section">
             <div class="container">
@@ -408,7 +534,7 @@
                         <em>Behandlungen &amp; Preise</em>
                     </h2>
                     <p class="section-desc reveal-up" style="animation-delay: 0.2s">
-                        Investieren Sie in Ihre Schönheit. Alle Preise in CHF. Auch kurzfristige Termine möglich.
+                        Investiere in deine Schönheit. Alle Preise in CHF. Auch kurzfristige Termine möglich.
                     </p>
                 </div>
 
@@ -531,7 +657,7 @@
                         </div>
                         <div class="price-group">
                             <div class="price-group-header"><h3><svg class="price-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2L12 16.4l-6.4 4.8L8 14l-6-4.8h7.6z"/></svg> Klassische Massage</h3></div>
-                            <p class="price-group-desc">Wohltuende Ganzkörpermassage mit warmen Ölen, die Verspannungen löst, die Durchblutung fördert und Körper sowie Geist in tiefe Entspannung versetzt. Wählen Sie zwischen 60, 90 oder 120 Minuten – je nach Ihrem Bedürfnis nach Erholung.</p>
+                            <p class="price-group-desc">Wohltuende Ganzkörpermassage mit warmen Ölen, die Verspannungen löst, die Durchblutung fördert und Körper sowie Geist in tiefe Entspannung versetzt. Wähle zwischen 60, 90 oder 120 Minuten – je nach deinem Bedürfnis nach Erholung.</p>
                             <div class="price-row"><span>Ganzkörper – 60 Min</span><strong>CHF 130</strong></div>
                             <div class="price-row"><span>Ganzkörper – 90 Min</span><strong>CHF 190</strong></div>
                             <div class="price-row"><span>Ganzkörper – 120 Min</span><strong>CHF 240</strong></div>
@@ -591,7 +717,7 @@
                         </div>
                         <div class="price-group">
                             <div class="price-group-header"><h3>💇‍♀️ Haare</h3></div>
-                            <p class="price-group-desc">Professionelles Haarstyling für Ihren besonderen Anlass. Von der eleganten Abendfrisur bis zur traumhaften Brautfrisur – wir kreieren den perfekten Look, der den ganzen Tag hält.</p>
+                            <p class="price-group-desc">Professionelles Haarstyling für deinen besonderen Anlass. Von der eleganten Abendfrisur bis zur traumhaften Brautfrisur – wir kreieren den perfekten Look, der den ganzen Tag hält.</p>
                             <div class="price-row"><span>Styling</span><strong>CHF 80</strong></div>
                             <div class="price-row"><span>Abendfrisur</span><strong>CHF 100</strong></div>
                             <div class="price-row"><span>Brautfrisur</span><strong>CHF 140</strong></div>
@@ -666,7 +792,7 @@
                     <div class="price-panel" data-panel="pakete">
                         <div class="price-group">
                             <div class="price-group-header"><h3><svg class="price-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20"/></svg> Pakete</h3></div>
-                            <p class="price-group-desc">Sparen Sie mit unseren Behandlungspaketen: Buchen Sie mehrere Sitzungen im Voraus und profitieren Sie von attraktiven Paketpreisen. Ideal für Kuren mit Hydra, Microneedling oder BB Glow, bei denen mehrere Sitzungen die besten Resultate erzielen.</p>
+                            <p class="price-group-desc">Spare mit unseren Behandlungspaketen: Buche mehrere Sitzungen im Voraus und profitiere von attraktiven Paketpreisen. Ideal für Kuren mit Hydra, Microneedling oder BB Glow, bei denen mehrere Sitzungen die besten Resultate erzielen.</p>
                             <div class="price-row"><span>Hydra 3×</span><strong>CHF 420</strong></div>
                             <div class="price-row"><span>Hydra 5×</span><strong>CHF 700</strong></div>
                             <div class="price-row"><span>Microneedling 3×</span><strong>CHF 420</strong></div>
@@ -676,7 +802,7 @@
                         </div>
                         <div class="price-group">
                             <div class="price-group-header"><h3>➕ Extras</h3></div>
-                            <p class="price-group-desc">Ergänzen Sie Ihre Behandlung mit diesen Zusatzoptionen: LED Lichttherapie fördert die Zellregeneration, spezielle Masken spenden intensive Feuchtigkeit, und Kollagen-Auflagen sorgen für einen sofortigen Straffungseffekt.</p>
+                            <p class="price-group-desc">Ergänze deine Behandlung mit diesen Zusatzoptionen: LED Lichttherapie fördert die Zellregeneration, spezielle Masken spenden intensive Feuchtigkeit, und Kollagen-Auflagen sorgen für einen sofortigen Straffungseffekt.</p>
                             <div class="price-row"><span>LED Lichttherapie</span><strong>CHF 20</strong></div>
                             <div class="price-row"><span>Maske</span><strong>CHF 20</strong></div>
                             <div class="price-row"><span>Kollagen</span><strong>CHF 70</strong></div>
@@ -692,94 +818,6 @@
                     </a>
                 </div>
             </div>
-        </section>
-        <section id="treatments" class="treatments section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label reveal-up">Unsere Behandlungen</span>
-                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
-                        Exklusive Beauty<br>
-                        <em>Treatments</em> für Sie
-                    </h2>
-                    <p class="section-desc reveal-up" style="animation-delay: 0.2s">
-                        Von luxuriösen Gesichtsbehandlungen über Microneedling bis hin zu entspannenden Massagen – 
-                        entdecken Sie über 60 professionelle Treatments für Ihre Schönheit.
-                    </p>
-                </div>
-
-                <div class="treatments-grid">
-                    <article class="treatment-card reveal-up" style="animation-delay: 0.1s" id="treatment-signature">
-                        <div class="treatment-card-image">
-                            <img src="assets/treatment-signature.png" alt="Züri Glow Signature Ritual – Premium Gold Gesichtspflege Produkte" width="400" height="300" loading="lazy">
-                            <div class="treatment-card-overlay"></div>
-                            <div class="treatment-card-badge">Signature</div>
-                        </div>
-                        <div class="treatment-card-content">
-                            <div class="treatment-card-number">01</div>
-                            <h3>Züri Glow Signature Ritual</h3>
-                            <p>Unsere luxuriöse Komplettbehandlung für Gesicht, Hals &amp; Dekolleté. Tiefenreinigung, Ausreinigung, Hochfrequenz, Radiofrequenz, Ultraschall, LED Lichttherapie und individuell abgestimmte Wirkstoffe sorgen für maximale Hauterneuerung, sichtbare Straffung und einen unvergleichlichen Glow.</p>
-                            <ul class="treatment-features">
-                                <li>105–115 Min · CHF 240</li>
-                                <li>Maximale Hauterneuerung &amp; Straffung</li>
-                                <li>Individuelle Wirkstoffe für Ihren Hauttyp</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="treatment-card reveal-up" style="animation-delay: 0.2s" id="treatment-hydra">
-                        <div class="treatment-card-image">
-                            <img src="assets/treatment-hydrafacial.png" alt="Hydra Aquafacial Gerät – Professionelle Tiefenreinigung" width="400" height="300" loading="lazy">
-                            <div class="treatment-card-overlay"></div>
-                        </div>
-                        <div class="treatment-card-content">
-                            <div class="treatment-card-number">02</div>
-                            <h3>Hydra / Aquafacial</h3>
-                            <p>Unsere beliebteste Behandlung: Tiefenreinigung, Peeling und Ausreinigung kombiniert mit Ultraschall-Wirkstoffeinschleusung und LED Lichttherapie. Das Ergebnis ist ein klares, frisches und strahlendes Hautbild – sofort sichtbar. Auch als Deluxe-Version mit intensiven Seren und erweiterter Pflege erhältlich.</p>
-                            <ul class="treatment-features">
-                                <li>60–90 Min · ab CHF 150</li>
-                                <li>Ultraschall-Wirkstoffeinschleusung</li>
-                                <li>Auch als Deluxe ab CHF 180</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="treatment-card reveal-up" style="animation-delay: 0.3s" id="treatment-microneedling">
-                        <div class="treatment-card-image">
-                            <img src="assets/treatment-microneedling.png" alt="Microneedling Dermapen – Professionelle Hautverfeinerung" width="400" height="300" loading="lazy">
-                            <div class="treatment-card-overlay"></div>
-                        </div>
-                        <div class="treatment-card-content">
-                            <div class="treatment-card-number">03</div>
-                            <h3>Microneedling &amp; BB Glow</h3>
-                            <p>Mit feinen Nadeln wird die natürliche Kollagenbildung angeregt und die Hautstruktur nachhaltig verbessert. Ideal für Anti-Aging, Narben, Dehnungsstreifen und einen ebenmässigen Teint. Auch als Bio Microneedling mit Spongilla-Spicules für eine natürliche Intensivbehandlung verfügbar.</p>
-                            <ul class="treatment-features">
-                                <li>60–120 Min · ab CHF 150</li>
-                                <li>Gesicht, Hals, Dekolleté &amp; Körper</li>
-                                <li>Bio Microneedling &amp; BB Glow</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="treatment-card reveal-up" style="animation-delay: 0.4s" id="treatment-body">
-                        <div class="treatment-card-image">
-                            <img src="assets/treatment-massage.png" alt="Hot Stone Massage und Wellness Zubehör" width="400" height="300" loading="lazy">
-                            <div class="treatment-card-overlay"></div>
-                        </div>
-                        <div class="treatment-card-content">
-                            <div class="treatment-card-number">04</div>
-                            <h3>Body &amp; Massage</h3>
-                            <p>Entspannung für Körper und Seele: Unsere klassische Ganzkörpermassage, die wärmende Hot Stone Massage und die aktivierende Madero Therapie mit Holzinstrumenten sorgen für tiefe Muskelentspannung, Durchblutungsförderung und sichtbare Körperstraffung.</p>
-                            <ul class="treatment-features">
-                                <li>60–120 Min · ab CHF 130</li>
-                                <li>Hot Stone &amp; Madero Therapie</li>
-                                <li>Waxing Damen &amp; Herren</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
 
         <!-- Studio Section -->
         <section id="studio" class="studio section">
@@ -792,9 +830,9 @@
                             <em>Ruhe & Schönheit</em>
                         </h2>
                         <p class="section-desc reveal-up" style="animation-delay: 0.2s">
-                            Treten Sie ein in eine Welt der Entspannung. Unser Studio in Zürich Altstetten 
+                            Tritt ein in eine Welt der Entspannung. Unser Studio in Zürich Altstetten 
                             verbindet modernes Design mit einer warmen, einladenden Atmosphäre – der perfekte 
-                            Ort, um sich verwöhnen zu lassen und dem Alltag zu entfliehen.
+                            Ort, um dich verwöhnen zu lassen und dem Alltag zu entfliehen.
                         </p>
 
                         <div class="studio-features reveal-up" style="animation-delay: 0.3s">
@@ -822,7 +860,7 @@
                                 </div>
                                 <div>
                                     <h3>Persönliche Betreuung</h3>
-                                    <p>Exklusive Einzelbehandlungen – bei uns stehen Sie im Mittelpunkt.</p>
+                                    <p>Exklusive Einzelbehandlungen – bei uns stehst du im Mittelpunkt.</p>
                                 </div>
                             </div>
                         </div>
@@ -831,13 +869,13 @@
                     <div class="studio-visual">
                         <div class="studio-image-grid reveal-right">
                             <div class="studio-image-main">
-                                <img src="assets/studio-interior-real.jpg" alt="Züri Glow Beauty Studio Empfang – Kosmetikstudio Interieur in Zürich Altstetten" width="560" height="400" loading="lazy">
+                                <img src="assets/studio-interior-real.webp" alt="Züri Glow Beauty Studio Empfang – Kosmetikstudio Interieur in Zürich Altstetten" width="560" height="400" loading="lazy">
                             </div>
                             <div class="studio-image-secondary">
-                                <img src="assets/studio-mirror.jpg" alt="Blumenspiegel – Selfie-Ecke im Züri Glow Beauty Studio Zürich" width="260" height="260" loading="lazy">
+                                <img src="assets/studio-mirror.webp" alt="Blumenspiegel – Selfie-Ecke im Züri Glow Beauty Studio Zürich" width="260" height="260" loading="lazy">
                             </div>
                             <div class="studio-image-secondary">
-                                <img src="assets/treatment-room.jpg" alt="Behandlungsraum – Professionelle Kosmetik bei Züri Glow Beauty Studio" width="260" height="260" loading="lazy">
+                                <img src="assets/treatment-room.webp" alt="Behandlungsraum – Professionelle Kosmetik bei Züri Glow Beauty Studio" width="260" height="260" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -899,7 +937,12 @@
                         <p>«Endlich ein Studio, das auf meine Hautbedürfnisse wirklich eingeht.»</p>
                         <span>— Julia S., Wipkingen</span>
                     </div>
-                </div>
+            </div>
+            <div style="text-align:center; padding: 1.5rem 0 0;">
+                <a href="https://www.google.com/maps/place/Z%C3%BCri+Glow/@47.3898,8.4879,17z" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color: rgba(255,255,255,0.5); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition: color 0.3s ease;" onmouseover="this.style.color='#E8B94F'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Alle Bewertungen auf Google ansehen
+                </a>
             </div>
         </section>
 
@@ -907,13 +950,13 @@
         <section id="instagram" class="instagram-section section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label reveal-up">Folgen Sie uns</span>
+                    <span class="section-label reveal-up">Folge uns</span>
                     <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
                         Unser Instagram<br>
                         <em>@zuri_glow_</em>
                     </h2>
                     <p class="section-desc reveal-up" style="animation-delay: 0.2s">
-                        Entdecken Sie unsere neuesten Behandlungen, Ergebnisse und Beauty-Inspirationen
+                        Entdecke unsere neuesten Behandlungen, Ergebnisse und Beauty-Inspirationen
                         direkt aus dem Studio. Über 11'000 Follower vertrauen uns bereits.
                     </p>
                     <div class="ig-profile-bar reveal-up" style="animation-delay: 0.25s">
@@ -939,7 +982,7 @@
                     <div class="ig-slider-viewport" id="ig-slider-viewport">
                         <div class="ig-slider-track" id="ig-slider-track">
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-1.png" alt="Gesichtsbehandlung mit goldener Maske – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-1.webp" alt="Gesichtsbehandlung mit goldener Maske – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -948,7 +991,7 @@
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-2.png" alt="Bio-Microneedling Behandlung – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-2.webp" alt="Bio-Microneedling Behandlung – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -957,7 +1000,7 @@
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-3.png" alt="Lash & Brow Lift Ergebnisse – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-3.webp" alt="Lash & Brow Lift Ergebnisse – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -966,7 +1009,7 @@
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-4.png" alt="Maderotherapie – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-4.webp" alt="Maderotherapie – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -975,7 +1018,7 @@
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-5.png" alt="Professionelles Make-Up – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-5.webp" alt="Professionelles Make-Up – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -984,7 +1027,7 @@
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" class="ig-slide">
-                                <img src="assets/ig-post-6.png" alt="Glow-Ergebnis nach Behandlung – Züri Glow Instagram" loading="lazy">
+                                <img src="assets/ig-post-6.webp" alt="Glow-Ergebnis nach Behandlung – Züri Glow Instagram" width="400" height="500" loading="lazy">
                                 <div class="ig-slide-overlay">
                                     <div class="ig-slide-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.5"/></svg>
@@ -1022,12 +1065,12 @@
                     <div class="kontakt-info">
                         <span class="section-label reveal-up">Kontakt</span>
                         <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
-                            Bereit für Ihren<br>
+                            Bereit für deinen<br>
                             <em>Glow-Moment?</em>
                         </h2>
                         <p class="section-desc reveal-up" style="animation-delay: 0.2s">
-                            Buchen Sie jetzt Ihren Termin und erleben Sie den Unterschied. 
-                            Wir freuen uns, Sie in unserem Beauty Studio in Zürich Altstetten 
+                            Buche jetzt deinen Termin und erlebe den Unterschied. 
+                            Wir freuen uns, dich in unserem Beauty Studio in Zürich Altstetten 
                             persönlich willkommen zu heissen.
                         </p>
 
@@ -1097,7 +1140,7 @@
                         </div>
 
                         <div class="kontakt-social reveal-up" style="animation-delay: 0.5s">
-                            <span>Folgen Sie uns:</span>
+                            <span>Folge uns:</span>
                             <div class="kontakt-social-links">
                                 <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" aria-label="Instagram" class="social-link" id="social-instagram">
                                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1171,6 +1214,13 @@
                         <li>8048 Zürich</li>
                     </ul>
                 </div>
+                <div class="footer-links-group">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#impressum">Impressum</a></li>
+                        <li><a href="#datenschutz">Datenschutz</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-membership">
                 <div class="footer-cert-badges">
@@ -1193,11 +1243,73 @@
         </div>
     </footer>
 
+    <!-- Impressum -->
+    <section id="impressum" class="legal-section">
+        <div class="container">
+            <h2>Impressum</h2>
+            <p><strong>ZÜRI GLOW Beauty Studio</strong></p>
+            <p>Eugenhuberstrasse 53<br>8048 Zürich (Altstetten)<br>Schweiz</p>
+            <p>Telefon: <a href="tel:+41765827005">076 582 70 05</a><br>
+            E-Mail: <a href="mailto:info@zuriglow.ch">info@zuriglow.ch</a></p>
+            <p>Website: <a href="https://zuriglow.ch">zuriglow.ch</a></p>
+            <p>Verantwortlich für den Inhalt: Züri Glow Beauty Studio</p>
+            <p>Design &amp; Entwicklung: <a href="https://loriengroup.ch" target="_blank" rel="noopener">Lorien Group</a></p>
+            <h3>Haftungsausschluss</h3>
+            <p>Die Inhalte dieser Website werden mit grösstmöglicher Sorgfalt erstellt. Züri Glow übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr. Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs.</p>
+            <h3>Urheberrecht</h3>
+            <p>Die durch Züri Glow erstellten Inhalte und Werke auf dieser Website unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedarf der schriftlichen Zustimmung von Züri Glow.</p>
+        </div>
+    </section>
+
+    <!-- Datenschutzerklärung -->
+    <section id="datenschutz" class="legal-section">
+        <div class="container">
+            <h2>Datenschutzerklärung</h2>
+            <p><strong>Stand: April 2026</strong></p>
+            <h3>1. Allgemeines</h3>
+            <p>Züri Glow Beauty Studio (nachfolgend «wir») nimmt den Schutz deiner persönlichen Daten sehr ernst. Wir behandeln deine personenbezogenen Daten vertraulich und entsprechend der schweizerischen Datenschutzgesetzgebung (DSG/revDSG) sowie dieser Datenschutzerklärung.</p>
+            <h3>2. Verantwortliche Stelle</h3>
+            <p>Züri Glow Beauty Studio<br>Eugenhuberstrasse 53, 8048 Zürich<br>E-Mail: info@zuriglow.ch<br>Telefon: 076 582 70 05</p>
+            <h3>3. Erhobene Daten</h3>
+            <p>Beim Besuch unserer Website werden folgende Daten erhoben:</p>
+            <ul style="margin-left:2rem;margin-bottom:1rem">
+                <li>IP-Adresse (anonymisiert)</li>
+                <li>Browsertyp und -version</li>
+                <li>Betriebssystem</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Referrer-URL</li>
+            </ul>
+            <h3>4. Google Fonts</h3>
+            <p>Diese Website nutzt Google Fonts zur einheitlichen Darstellung von Schriften. Beim Aufruf einer Seite lädt dein Browser die benötigten Fonts direkt von Google-Servern. Dabei wird deine IP-Adresse an Google übermittelt. Weitere Informationen findest du in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+            <h3>5. Google Maps</h3>
+            <p>Wir nutzen auf unserer Website den Kartendienst Google Maps. Bei der Nutzung von Google Maps werden Daten über die Nutzung der Maps-Funktionen durch Website-Besucher an Google übermittelt und dort gespeichert.</p>
+            <h3>6. Terminbuchung (Calendly)</h3>
+            <p>Für die Online-Terminbuchung nutzen wir den Dienst Calendly. Wenn du einen Termin buchst, werden deine eingegebenen Daten (Name, E-Mail, Telefonnummer) von Calendly verarbeitet. Die Datenschutzerklärung von Calendly findest du unter <a href="https://calendly.com/privacy" target="_blank" rel="noopener">calendly.com/privacy</a>.</p>
+            <h3>7. Kontaktaufnahme</h3>
+            <p>Wenn du uns per E-Mail, Telefon oder WhatsApp kontaktierst, werden deine Angaben zur Bearbeitung deiner Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.</p>
+            <h3>8. Deine Rechte</h3>
+            <p>Du hast jederzeit das Recht auf Auskunft über deine bei uns gespeicherten Daten sowie ein Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung. Kontaktiere uns hierzu unter info@zuriglow.ch.</p>
+            <h3>9. Änderungen</h3>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung jederzeit zu ändern. Die aktuelle Version ist auf unserer Website veröffentlicht.</p>
+        </div>
+    </section>
+
     <!-- WhatsApp Float Widget -->
     <a href="https://wa.me/41765827005?text=Hallo%20Züri%20Glow!%20Ich%20möchte%20gerne%20einen%20Termin%20buchen." target="_blank" rel="noopener" class="whatsapp-widget" id="whatsapp-widget" aria-label="WhatsApp Chat">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
-    <script src="script.js"></script>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-Hinweis">
+        <div class="cookie-consent-inner">
+            <p>Diese Website nutzt Google Fonts und Google Maps. Dabei können Daten an Google übermittelt werden. Mehr dazu in unserer <a href="#datenschutz">Datenschutzerklärung</a>.</p>
+            <div class="cookie-consent-actions">
+                <button id="cookie-accept" class="btn btn-primary cookie-btn">Akzeptieren</button>
+                <button id="cookie-decline" class="btn btn-ghost cookie-btn">Nur notwendige</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.min.js"></script>
 </body>
 </html>
