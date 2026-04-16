@@ -1040,7 +1040,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .treatment-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow-magenta);
     border-color: var(--color-magenta);
 }
@@ -1059,7 +1059,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .treatment-card:hover .treatment-card-image img {
-    transform: scale(1.08);
+    transform: scale(1.03);
 }
 
 .treatment-card-overlay {
