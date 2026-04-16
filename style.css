@@ -60,7 +60,7 @@
     /* Layout */
     --container-max:   1280px;
     --container-pad:   clamp(1.25rem, 4vw, 3rem);
-    --section-pad:     clamp(4rem, 10vw, 8rem);
+    --section-pad:     clamp(2.5rem, 6vw, 5rem);
     --border-radius:   12px;
     --border-radius-lg: 20px;
     --border-radius-xl: 32px;
@@ -96,7 +96,23 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: var(--color-charcoal);
-    background-color: var(--color-ivory);
+    background: linear-gradient(180deg,
+        #F5E6FF 0%,
+        #FFF0F5 8%,
+        #FFF8F0 15%,
+        #F8EEFF 22%,
+        #FFEEF8 30%,
+        #F5F0FF 38%,
+        #FFF5F0 45%,
+        #F8E8FF 52%,
+        #FFF0F5 60%,
+        #F0F0FF 68%,
+        #FFF8F0 75%,
+        #F5EEFF 82%,
+        #FFF0F5 90%,
+        #2D1640 95%,
+        #1A0E28 100%
+    );
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
@@ -233,7 +249,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--space-4xl);
+    margin-bottom: var(--space-2xl);
 }
 
 .section-header .section-desc {
@@ -831,7 +847,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ABOUT SECTION
    ═══════════════════════════════════════════════════════════════ */
 .about {
-    background: linear-gradient(160deg, #FFF8F0 0%, #FFF0F5 30%, #F5EEFF 60%, #F0F0FF 100%);
+    background: transparent;
 }
 
 .about-grid {
@@ -948,7 +964,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    TREATMENTS SECTION
    ═══════════════════════════════════════════════════════════════ */
 .treatments {
-    background: linear-gradient(180deg, #F8F0FF 0%, #EDD8FF 50%, #F5EAFF 100%);
+    background: transparent;
     position: relative;
 }
 
@@ -1082,7 +1098,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    STUDIO SECTION
    ═══════════════════════════════════════════════════════════════ */
 .studio {
-    background: linear-gradient(160deg, #F0F0FF 0%, #F5F0FF 30%, #FFF5F0 60%, #FFF8F5 100%);
+    background: transparent;
 }
 
 .studio-grid {
@@ -1168,7 +1184,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    PREISE / PRICING SECTION
    ═══════════════════════════════════════════════════════════════ */
 .preise {
-    background: linear-gradient(180deg, #FFF8F0 0%, #F8EEFF 40%, #FFEEF8 70%, #FFF5FA 100%);
+    background: transparent;
     position: relative;
 }
 
@@ -2323,8 +2339,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    TESTIMONIALS — Logo Colors Flow
    ═══════════════════════════════════════════════════════════════ */
 .testimonials-section {
-    background: linear-gradient(135deg, #FFF0F5 0%, #F8E8FF 25%, #F0EAFF 50%, #E8F0FF 75%, #FFF5F0 100%);
-    padding: var(--space-3xl) 0;
+    background: transparent;
+    padding: var(--space-2xl) 0;
     overflow: hidden;
 }
 
@@ -2388,7 +2404,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    CONTACT SECTION — Logo Colors
    ═══════════════════════════════════════════════════════════════ */
 .kontakt {
-    background: linear-gradient(160deg, #F5F0FF 0%, #FFF0F5 30%, #FFF8F0 60%, #F0F5FF 100%);
+    background: transparent;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -2419,5 +2435,5 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    INSTAGRAM SECTION — Logo Colors
    ═══════════════════════════════════════════════════════════════ */
 .instagram-section {
-    background: linear-gradient(135deg, #FFF8F0, #FFF0F5, #F5EEFF) !important;
+    background: transparent !important;
 }
