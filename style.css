@@ -1266,6 +1266,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     margin-bottom: var(--space-sm);
 }
 
+.price-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    color: var(--color-magenta);
+    flex-shrink: 0;
+}
+
+.price-group-featured .price-icon {
+    color: var(--color-gold);
+}
+
+.price-group-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .price-group-header h3 {
     font-family: var(--font-display);
     font-size: 1.25rem;
