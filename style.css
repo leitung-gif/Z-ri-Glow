@@ -10,12 +10,16 @@
     --color-cream-warm:  #FFF6EC;
     --color-ivory:       #FEFBF8;
     --color-lavender:    #C850C0;
-    --color-lavender-light: #F0E4FA;
+    --color-lavender-light: #E8D4F8;
     --color-lavender-deep: #A020A0;
     --color-magenta:     #C850C0;
     --color-magenta-bright: #E040D0;
     --color-purple-dark: #2D1640;
     --color-purple-rich: #6B2FA0;
+    --color-logo-blue:   #9B8FD0;
+    --color-logo-peach:  #E89070;
+    --color-logo-pink:   #FF69B4;
+    --color-logo-lilac:  #B48FE0;
     --color-apricot:     #F8D4B8;
     --color-apricot-soft: #FDE8D5;
     --color-blush:       #FF69B4;
@@ -197,7 +201,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     content: '';
     width: 32px;
     height: 2px;
-    background: var(--gradient-magenta);
+    background: linear-gradient(135deg, var(--color-logo-peach), var(--color-logo-pink), var(--color-logo-lilac));
 }
 
 .section-title {
@@ -213,7 +217,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .section-title em {
     font-style: italic;
     font-weight: 500;
-    background: linear-gradient(135deg, var(--color-magenta), var(--color-purple-rich));
+    background: linear-gradient(135deg, var(--color-logo-peach), var(--color-logo-pink), var(--color-magenta), var(--color-logo-lilac), var(--color-logo-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -827,7 +831,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ABOUT SECTION
    ═══════════════════════════════════════════════════════════════ */
 .about {
-    background: var(--color-white);
+    background: linear-gradient(160deg, #FFF8F0 0%, #FFF0F5 30%, #F5EEFF 60%, #F0F0FF 100%);
 }
 
 .about-grid {
@@ -1078,7 +1082,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    STUDIO SECTION
    ═══════════════════════════════════════════════════════════════ */
 .studio {
-    background: var(--color-white);
+    background: linear-gradient(160deg, #F0F0FF 0%, #F5F0FF 30%, #FFF5F0 60%, #FFF8F5 100%);
 }
 
 .studio-grid {
@@ -2295,4 +2299,107 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
         flex-direction: column;
         gap: 1rem;
     }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TESTIMONIALS — Logo Colors Flow
+   ═══════════════════════════════════════════════════════════════ */
+.testimonials-section {
+    background: linear-gradient(135deg, #FFF0F5 0%, #F8E8FF 25%, #F0EAFF 50%, #E8F0FF 75%, #FFF5F0 100%);
+    padding: var(--space-3xl) 0;
+    overflow: hidden;
+}
+
+.testimonials-marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-track {
+    display: flex;
+    gap: var(--space-xl);
+    animation: marqueeScroll 35s linear infinite;
+}
+
+.testimonial-item {
+    min-width: 380px;
+    padding: var(--space-xl) var(--space-2xl);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid rgba(200, 80, 192, 0.1);
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-base);
+}
+
+.testimonial-item:hover {
+    border-color: rgba(200, 80, 192, 0.25);
+    box-shadow: var(--shadow-magenta);
+    transform: translateY(-4px);
+}
+
+.testimonial-stars {
+    color: var(--color-gold);
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+    letter-spacing: 2px;
+}
+
+.testimonial-item p {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-md);
+}
+
+.testimonial-item span {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-logo-pink);
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONTACT SECTION — Logo Colors
+   ═══════════════════════════════════════════════════════════════ */
+.kontakt {
+    background: linear-gradient(160deg, #F5F0FF 0%, #FFF0F5 30%, #FFF8F0 60%, #F0F5FF 100%);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ABOUT & STUDIO ICON ACCENTS — Logo Colors
+   ═══════════════════════════════════════════════════════════════ */
+.about-value-icon,
+.studio-feature-icon {
+    color: var(--color-logo-pink);
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.1), rgba(155, 143, 208, 0.1));
+    border-radius: 12px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.about-value:nth-child(2) .about-value-icon,
+.studio-feature:nth-child(2) .studio-feature-icon {
+    color: var(--color-logo-lilac);
+    background: linear-gradient(135deg, rgba(180, 143, 224, 0.1), rgba(200, 80, 192, 0.1));
+}
+
+.about-value:nth-child(3) .about-value-icon,
+.studio-feature:nth-child(3) .studio-feature-icon {
+    color: var(--color-logo-peach);
+    background: linear-gradient(135deg, rgba(232, 144, 112, 0.1), rgba(232, 185, 79, 0.1));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INSTAGRAM SECTION — Logo Colors
+   ═══════════════════════════════════════════════════════════════ */
+.instagram-section {
+    background: linear-gradient(135deg, #FFF8F0, #FFF0F5, #F5EEFF) !important;
 }
