@@ -471,3 +471,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 })();
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL OVERLAY (Impressum / Datenschutz)
+   ═══════════════════════════════════════════════════════════════ */
+(function() {
+    // Open legal overlay when clicking links with href="#impressum" or "#datenschutz"
+    document.querySelectorAll('a[href="#impressum"], a[href="#datenschutz"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var targetId = this.getAttribute('href').substring(1);
+            var section = document.getElementById(targetId);
+            if (section) {
+                section.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Close via × button
+    document.querySelectorAll('.legal-close').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var section = this.closest('.legal-section');
+            if (section) {
+                section.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // Close via clicking backdrop (outside content)
+    document.querySelectorAll('.legal-section').forEach(function(section) {
+        section.addEventListener('click', function(e) {
+            if (e.target === section) {
+                section.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // Close via ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.legal-section.active').forEach(function(section) {
+                section.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    });
+})();

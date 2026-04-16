@@ -2716,3 +2716,90 @@ body::after {
         animation: none !important;
     }
 }
+
+/* ===== LEGAL SECTIONS (Impressum / Datenschutz) ===== */
+.legal-section {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(10, 10, 12, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow-y: auto;
+    padding: 4rem 2rem;
+    animation: legalFadeIn 0.3s ease;
+}
+
+.legal-section.active {
+    display: block;
+}
+
+@keyframes legalFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.legal-section .container {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.legal-section h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    padding-right: 3rem;
+}
+
+.legal-section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.legal-section p,
+.legal-section li {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.6rem;
+}
+
+.legal-section a {
+    color: var(--color-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.legal-section a:hover {
+    color: #fff;
+}
+
+.legal-close {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: all 0.3s ease;
+}
+
+.legal-close:hover {
+    background: var(--color-gold);
+    color: #000;
+    border-color: var(--color-gold);
+}
