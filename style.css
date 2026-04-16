@@ -2488,6 +2488,61 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     .hero-buttons {
         justify-content: center;
     }
+
+    /* Footer mobile centering */
+    .footer-top {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 2rem !important;
+    }
+
+    .footer-brand {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links-group {
+        text-align: center;
+    }
+
+    .footer-links-group ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        flex-direction: column !important;
+        gap: 0.5rem;
+    }
+
+    .footer-membership {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-cert-badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Contact section mobile */
+    .kontakt-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .kontakt-social {
+        text-align: center;
+    }
+
+    .kontakt-social-links {
+        justify-content: center;
+    }
 }
 
 /* Remove body gradient leaking into footer area */
