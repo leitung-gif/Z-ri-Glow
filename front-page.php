@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
         <!-- Hero Section -->
         <section id="hero" class="hero">
@@ -21,7 +21,7 @@
                         bis Permanent Make-up. Individuell auf dich abgestimmt.
                     </p>
                     <div class="hero-actions reveal-up" style="animation-delay: 0.45s">
-                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary" id="hero-book-btn">
+                        <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="btn btn-primary" id="hero-book-btn">
                             <span>Jetzt Termin Buchen</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
@@ -50,7 +50,7 @@
                 <div class="hero-visual reveal-scale" style="animation-delay: 0.2s">
                     <div class="hero-image-wrapper">
                         <div class="hero-image-frame">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/studio-mirror.webp' ); ?>" alt="Züri Glow Beauty Studio – Blumentor und Empfang mit LED-Beleuchtung in Zürich Altstetten" class="hero-image" width="600" height="750" loading="eager">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/studio-mirror.webp' ); ?>" alt="Züri Glow Beauty Studio – Blumentor und Empfang mit LED-Beleuchtung in Zürich Altstetten" class="hero-image" width="600" height="750" loading="eager" fetchpriority="high">
                         </div>
                         <div class="hero-image-accent"></div>
                         <div class="hero-float-card hero-float-card-1">
@@ -76,6 +76,32 @@
                 <div class="hero-scroll-line"></div>
             </div>
         </section>
+
+        <!-- Services Marquee Band -->
+        <div class="marquee-band">
+            <div class="marquee-track">
+                <span>HYDRAFACIAL</span><span class="marquee-dot">✦</span>
+                <span>MICRONEEDLING</span><span class="marquee-dot">✦</span>
+                <span>PERMANENT MAKE-UP</span><span class="marquee-dot">✦</span>
+                <span>BB GLOW</span><span class="marquee-dot">✦</span>
+                <span>CHEMICAL PEELING</span><span class="marquee-dot">✦</span>
+                <span>MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>HOT STONE</span><span class="marquee-dot">✦</span>
+                <span>WAXING</span><span class="marquee-dot">✦</span>
+                <span>LASH LIFTING</span><span class="marquee-dot">✦</span>
+                <span>BROW LIFTING</span><span class="marquee-dot">✦</span>
+                <span>HYDRAFACIAL</span><span class="marquee-dot">✦</span>
+                <span>MICRONEEDLING</span><span class="marquee-dot">✦</span>
+                <span>PERMANENT MAKE-UP</span><span class="marquee-dot">✦</span>
+                <span>BB GLOW</span><span class="marquee-dot">✦</span>
+                <span>CHEMICAL PEELING</span><span class="marquee-dot">✦</span>
+                <span>MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>HOT STONE</span><span class="marquee-dot">✦</span>
+                <span>WAXING</span><span class="marquee-dot">✦</span>
+                <span>LASH LIFTING</span><span class="marquee-dot">✦</span>
+                <span>BROW LIFTING</span><span class="marquee-dot">✦</span>
+            </div>
+        </div>
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -233,6 +259,33 @@
             </div>
         </section>
 
+        <!-- Dark Stats Section -->
+        <section class="stats-section" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up">
+                        <span class="stat-number" data-target="60">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Behandlungen</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="animation-delay: 0.1s">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Zufriedene Kundinnen</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="animation-delay: 0.2s">
+                        <span class="stat-number stat-rating">5.0</span>
+                        <span class="stat-label">Google Bewertung</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="animation-delay: 0.3s">
+                        <span class="stat-number" data-target="11">0</span><span class="stat-plus">K+</span>
+                        <span class="stat-label">Instagram Follower</span>
+                    </div>
+                </div>
+                <p class="stats-tagline reveal-up" style="animation-delay: 0.4s">
+                    V-NISSG zertifiziert · SGMK Mitglied · Premium Qualität seit Tag 1
+                </p>
+            </div>
+        </section>
+
         <!-- Prices Section -->
         <section id="preise" class="preise section">
             <div class="container">
@@ -252,7 +305,9 @@
                     <button class="price-tab active" data-tab="gesicht">Gesicht</button>
                     <button class="price-tab" data-tab="needling">Needling &amp; Peeling</button>
                     <button class="price-tab" data-tab="body">Body &amp; Massage</button>
-                    <button class="price-tab" data-tab="pmu">PMU &amp; Beauty</button>
+                    <button class="price-tab" data-tab="pmu">PMU</button>
+                    <button class="price-tab" data-tab="makeup">Make-up</button>
+                    <button class="price-tab" data-tab="haare">Haare</button>
                     <button class="price-tab" data-tab="men">Men</button>
                     <button class="price-tab" data-tab="waxing">Waxing</button>
                     <button class="price-tab" data-tab="pakete">Pakete &amp; Extras</button>
@@ -392,7 +447,7 @@
                         </div>
                     </div>
 
-                    <!-- PMU & BEAUTY -->
+                    <!-- PMU -->
                     <div class="price-panel" data-panel="pmu">
                         <div class="price-group">
                             <div class="price-group-header"><h3>💋 PMU – Permanent Make-up</h3></div>
@@ -417,19 +472,62 @@
                             <div class="price-row"><span>Body Camouflage</span><strong>ab CHF 200</strong></div>
                             <div class="price-row"><span>Hairline PMU</span><strong>ab CHF 280</strong></div>
                         </div>
+                    </div>
+
+                    <!-- MAKE-UP -->
+                    <div class="price-panel" data-panel="makeup">
                         <div class="price-group">
                             <div class="price-group-header"><h3>💄 Make-up</h3></div>
                             <p class="price-group-desc">Professionelles Make-up für jeden Anlass – vom natürlichen Tages-Look über glamouröse Abend-Looks bis zum persönlichen Braut-Make-up. Wir verwenden hochwertige Produkte von führenden Beauty-Marken für ein langanhaltendes Finish.</p>
-                            <div class="price-row"><span>Tages Make-up</span><strong>CHF 80</strong></div>
-                            <div class="price-row"><span>Abend Make-up</span><strong>CHF 100</strong></div>
-                            <div class="price-row"><span>Braut Make-up</span><strong>CHF 140</strong></div>
+                            <div class="price-row"><span>Tages Make-up – 30 Min</span><strong>CHF 80</strong></div>
+                            <div class="price-row"><span>Abend Make-up – 45 Min</span><strong>CHF 100</strong></div>
+                            <div class="price-row"><span>Braut Make-up – 2 Std</span><strong>CHF 140</strong></div>
                         </div>
                         <div class="price-group">
-                            <div class="price-group-header"><h3>💇‍♀️ Haare</h3></div>
+                            <div class="price-group-header"><h3>✨ Make-Up &amp; Frisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Das perfekte Kombi-Paket: Professionelles Make-up und Haarstyling in einer Sitzung – ideal für Events, Hochzeiten und besondere Anlässe.</p>
+                            <div class="price-row"><span>Make-Up &amp; Frisur – 45 Min</span><strong>CHF 85</strong></div>
+                            <div class="price-row"><span>Make-Up &amp; Frisur – 1 Std 30 Min</span><strong>CHF 120</strong></div>
+                            <div class="price-row"><span>Make-Up &amp; Frisur – 2 Std 30 Min</span><strong>CHF 250</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>🌟 Tages Make-Up &amp; Frisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Natürliches Tages-Make-up kombiniert mit einem schnellen, eleganten Styling – perfekt für den Alltag oder einen spontanen Anlass.</p>
+                            <div class="price-row"><span>45 Min</span><strong>CHF 85</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>🌃 Abend Make-Up &amp; Frisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Glamouröses Abend-Make-up und eine elegante Frisur für einen unvergesslichen Auftritt.</p>
+                            <div class="price-row"><span>2 Std</span><strong>CHF 120</strong></div>
+                        </div>
+                        <div class="price-group price-group-featured">
+                            <div class="price-group-header"><h3>👰 Braut Make-Up &amp; Frisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Dein komplettes Braut-Styling: Perfektes Make-up und eine traumhafte Frisur für den schönsten Tag deines Lebens.</p>
+                            <div class="price-row"><span>2 Std</span><strong>CHF 300</strong></div>
+                        </div>
+                    </div>
+
+                    <!-- HAARE -->
+                    <div class="price-panel" data-panel="haare">
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>💇‍♀️ Haare &amp; Styling</h3></div>
                             <p class="price-group-desc">Professionelles Haarstyling für deinen besonderen Anlass. Von der eleganten Abendfrisur bis zur traumhaften Brautfrisur – wir kreieren den perfekten Look, der den ganzen Tag hält.</p>
                             <div class="price-row"><span>Styling</span><strong>CHF 80</strong></div>
                             <div class="price-row"><span>Abendfrisur</span><strong>CHF 100</strong></div>
                             <div class="price-row"><span>Brautfrisur</span><strong>CHF 140</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>✂️ Damen – Hochsteckfrisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Elegante Hochsteckfrisuren für jeden Anlass – von der einfachen Hochsteckfrisur bis zur aufwendigen Variante mit Locken. Perfekt für Hochzeiten, Galas und besondere Events.</p>
+                            <div class="price-row"><span>Einfach – 1 Std</span><strong>CHF 65</strong></div>
+                            <div class="price-row"><span>Hochsteck – 1 Std 30 Min</span><strong>CHF 85</strong></div>
+                            <div class="price-row"><span>Hochsteck + Locken – 2 Std</span><strong>CHF 120</strong></div>
+                        </div>
+                        <div class="price-group price-group-featured">
+                            <div class="price-group-header"><h3>👰 Damen – Brautfrisur</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Die perfekte Brautfrisur für deinen grossen Tag. Von der eleganten Hochsteckfrisur bis zur romantischen Frisur mit Locken – individuell auf dich und dein Brautkleid abgestimmt.</p>
+                            <div class="price-row"><span>Brautfrisur – 1 Std 30 Min</span><strong>CHF 250</strong></div>
+                            <div class="price-row"><span>Brautfrisur + Locken – 2 Std</span><strong>CHF 300</strong></div>
                         </div>
                     </div>
 
@@ -521,12 +619,13 @@
                 </div>
 
                 <div class="preise-cta reveal-up" style="animation-delay: 0.3s">
-                    <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary" id="price-book-btn">
+                    <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="btn btn-primary" id="price-book-btn">
                         <span>Jetzt Termin Buchen</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
+        </section>
 
         <!-- Studio Section -->
         <section id="studio" class="studio section">
@@ -592,7 +691,82 @@
             </div>
         </section>
 
-
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-up">Kundenstimmen</span>
+                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                        Was unsere<br>
+                        <em>Kundinnen sagen</em>
+                    </h2>
+                </div>
+            </div>
+            <div class="testimonials-marquee">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Ich bin absolut begeistert! Meine Haut hat sich nach dem Hydrafacial so frisch und strahlend angefühlt wie nie zuvor. Das Team ist super professionell und herzlich.»</p>
+                        <span>— Sarah M., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Das Signature Ritual war ein Traum! Über 100 Minuten pure Verwöhnung. Meine Haut sieht seitdem unglaublich aus. Komme definitiv wieder!»</p>
+                        <span>— Leyla K., Altstetten</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Bestes Kosmetikstudio in Zürich! Das Microneedling hat meine Aknenarben deutlich verbessert. Nach 3 Sitzungen sind die Ergebnisse unglaublich.»</p>
+                        <span>— Jessica R., Schlieren</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Die Powder Brows sind perfekt geworden! So natürlich und symmetrisch. Endlich muss ich morgens nicht mehr 20 Minuten vor dem Spiegel stehen.»</p>
+                        <span>— Nina A., Dietikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Super entspannende Hot Stone Massage! Der perfekte Ausgleich nach einer stressigen Woche. Die Atmosphäre im Studio ist einfach wunderschön.»</p>
+                        <span>— Melanie B., Wiedikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Bin seit Monaten Stammkundin und liebe jede Behandlung. Das Lash Lifting hält super lange und sieht total natürlich aus. Absolute Empfehlung!»</p>
+                        <span>— Anita W., Höngg</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Ich bin absolut begeistert! Meine Haut hat sich nach dem Hydrafacial so frisch und strahlend angefühlt wie nie zuvor. Das Team ist super professionell und herzlich.»</p>
+                        <span>— Sarah M., Zürich</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Das Signature Ritual war ein Traum! Über 100 Minuten pure Verwöhnung. Meine Haut sieht seitdem unglaublich aus. Komme definitiv wieder!»</p>
+                        <span>— Leyla K., Altstetten</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Bestes Kosmetikstudio in Zürich! Das Microneedling hat meine Aknenarben deutlich verbessert. Nach 3 Sitzungen sind die Ergebnisse unglaublich.»</p>
+                        <span>— Jessica R., Schlieren</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Die Powder Brows sind perfekt geworden! So natürlich und symmetrisch. Endlich muss ich morgens nicht mehr 20 Minuten vor dem Spiegel stehen.»</p>
+                        <span>— Nina A., Dietikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Super entspannende Hot Stone Massage! Der perfekte Ausgleich nach einer stressigen Woche. Die Atmosphäre im Studio ist einfach wunderschön.»</p>
+                        <span>— Melanie B., Wiedikon</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>«Bin seit Monaten Stammkundin und liebe jede Behandlung. Das Lash Lifting hält super lange und sieht total natürlich aus. Absolute Empfehlung!»</p>
+                        <span>— Anita W., Höngg</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Instagram Feed Slider -->
         <section id="instagram" class="instagram-section section">
@@ -702,6 +876,94 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
                         <span>Auf Facebook Folgen</span>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal-up">Häufige Fragen</span>
+                    <h2 class="section-title reveal-up" style="animation-delay: 0.1s">
+                        Alles was du<br>
+                        <em>wissen musst</em>
+                    </h2>
+                </div>
+
+                <div class="faq-grid reveal-up" style="animation-delay: 0.2s">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Wie viel kostet eine Gesichtsbehandlung bei Züri Glow?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Unsere Gesichtsbehandlungen beginnen ab CHF 85 (Akne Schüler) bis CHF 240 (Signature Ritual). Die beliebteste Behandlung, das Hydra/Aquafacial, kostet CHF 150 (60–70 Min) oder CHF 180 als Deluxe-Version. Alle Preise findest du in unserer <a href="#preise">Preisliste</a>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Was ist ein Hydrafacial und für wen ist es geeignet?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Das Hydrafacial ist eine nicht-invasive Tiefenreinigung, die Peeling, Ausreinigung und Wirkstoffeinschleusung kombiniert. Es eignet sich für alle Hauttypen – ob trockene, ölige, reife oder unreine Haut. Das Ergebnis ist sofort sichtbar: ein klares, strahlendes Hautbild ohne Ausfallzeit.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Ist Microneedling schmerzhaft?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Vor der Behandlung wird eine betäubende Creme aufgetragen, sodass du nur ein leichtes Kribbeln spürst. Die meisten Kundinnen empfinden es als sehr gut auszuhalten. Nach der Sitzung kann die Haut leicht gerötet sein – ähnlich wie bei einem Sonnenbrand – was nach 1–2 Tagen abklingt.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Wie lange hält Permanent Make-up (PMU)?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Permanent Make-up hält in der Regel 1–3 Jahre, abhängig von Hauttyp, Lifestyle und Pflege. Wir empfehlen eine Auffrischung nach 12–18 Monaten, um die Farbe intensiv zu halten. Bei Züri Glow kostet eine Auffrischung bis 12 Monate CHF 220, bis 24 Monate CHF 260.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Muss ich mich auf eine Behandlung vorbereiten?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Für die meisten Behandlungen ist keine spezielle Vorbereitung nötig. Komme am besten ungeschminkt und vermeide 24h vorher starke Peelings oder Retinol. Für Microneedling und Chemical Peeling beraten wir dich vorab persönlich.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Ist Züri Glow zertifiziert?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ja! Züri Glow ist V-NISSG zertifiziert (Verordnung über den Schutz vor nichtionisierender Strahlung und Schall) und Mitglied des SGMK (Schweizerischer Gewerbeverband Medical Kosmetik). Alle Behandlungen werden nach höchsten Hygiene- und Sicherheitsstandards durchgeführt.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Wie buche ich einen Termin?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Am einfachsten buchst du online über unser <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener">Treatwell-Buchungssystem</a>. Du kannst uns auch telefonisch unter <a href="tel:+41765827005">076 582 70 05</a> oder per <a href="https://wa.me/41765827005" target="_blank" rel="noopener">WhatsApp</a> erreichen. Auch kurzfristige Termine sind oft möglich!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Wo befindet sich das Studio und wie komme ich hin?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Unser Studio befindet sich an der Eugenhuberstrasse 53, 8048 Zürich (Altstetten). Wir sind nur wenige Gehminuten vom S-Bahnhof Zürich Altstetten entfernt und gut erreichbar mit Bus (Linie 31, 80) und S-Bahn. Parkplätze findest du direkt in der Umgebung.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -816,7 +1078,7 @@
                                 title="Züri Glow Beauty Studio Standort auf Google Maps"
                             ></iframe>
                         </div>
-                        <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="btn btn-primary kontakt-book-btn" id="contact-book-btn">
+                        <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="btn btn-primary kontakt-book-btn" id="contact-book-btn">
                             <span>Jetzt Termin Buchen</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>

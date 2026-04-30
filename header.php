@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -38,7 +38,7 @@
                 <li><a href="#kontakt" class="nav-link" data-section="kontakt">Kontakt</a></li>
             </ul>
 
-            <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="nav-cta" id="nav-book-btn">Termin Buchen</a>
+            <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="nav-cta" id="nav-book-btn">Termin Buchen</a>
 
             <button class="nav-hamburger" id="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
                 <span></span>
@@ -59,7 +59,7 @@
                 <li><a href="#preise" class="mobile-nav-link" data-index="4">Preise</a></li>
                 <li><a href="#kontakt" class="mobile-nav-link" data-index="5">Kontakt</a></li>
             </ul>
-            <a href="https://calendly.com/zuriglow1/30min" target="_blank" rel="noopener" class="mobile-nav-cta">Termin Buchen</a>
+            <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="mobile-nav-cta">Termin Buchen</a>
             <div class="mobile-nav-social">
                 <a href="https://www.instagram.com/zuri_glow_?utm_source=qr&igsh=cnAwZzNtNjRreW9i" target="_blank" rel="noopener" aria-label="Instagram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>

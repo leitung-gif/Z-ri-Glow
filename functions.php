@@ -33,7 +33,7 @@ function zuriglow_enqueue_assets() {
     // Main theme stylesheet (minified)
     wp_enqueue_style(
         'zuriglow-style',
-        $theme_uri . '/style.min.css',
+        $theme_uri . '/style.css',
         array( 'zuriglow-google-fonts' ),
         $theme_ver
     );
@@ -41,7 +41,7 @@ function zuriglow_enqueue_assets() {
     // Main theme script (minified, in footer)
     wp_enqueue_script(
         'zuriglow-script',
-        $theme_uri . '/script.min.js',
+        $theme_uri . '/script.js',
         array(),
         $theme_ver,
         true // Load in footer
@@ -181,6 +181,91 @@ function zuriglow_structured_data() {
                 "ratingCount": "100",
                 "reviewCount": "100"
             }
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Züri Glow Beauty Studio",
+            "url": "https://zuriglow.ch/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://zuriglow.ch/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Wie viel kostet eine Gesichtsbehandlung bei Züri Glow?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Unsere Gesichtsbehandlungen beginnen ab CHF 85 (Akne Schüler) bis CHF 240 (Signature Ritual). Die beliebteste Behandlung, das Hydra/Aquafacial, kostet CHF 150 (60–70 Min) oder CHF 180 als Deluxe-Version (75–90 Min)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was ist ein Hydrafacial und für wen ist es geeignet?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das Hydrafacial (auch Aquafacial) ist eine nicht-invasive Tiefenreinigung, die Peeling, Ausreinigung und Wirkstoffeinschleusung kombiniert. Es eignet sich für alle Hauttypen – ob trockene, ölige, reife oder unreine Haut. Das Ergebnis ist sofort sichtbar."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ist Microneedling schmerzhaft?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Vor der Behandlung wird eine betäubende Creme aufgetragen, sodass du während des Microneedlings nur ein leichtes Kribbeln spürst. Nach der Sitzung kann die Haut leicht gerötet sein, was nach 1–2 Tagen abklingt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie lange hält Permanent Make-up (PMU)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Permanent Make-up hält in der Regel 1–3 Jahre, abhängig von Hauttyp, Lifestyle und Pflege. Wir empfehlen eine Auffrischung nach 12–18 Monaten. Bei Züri Glow kostet eine Auffrischung bis 12 Monate CHF 220, bis 24 Monate CHF 260."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Muss ich mich auf eine Behandlung vorbereiten?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Für die meisten Behandlungen ist keine spezielle Vorbereitung nötig. Komme am besten ungeschminkt und vermeide 24h vorher starke Peelings oder Retinol. Für Microneedling und Chemical Peeling beraten wir dich vorab persönlich."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ist Züri Glow zertifiziert?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja! Züri Glow ist V-NISSG zertifiziert und Mitglied des SGMK (Schweizerischer Gewerbeverband Medical Kosmetik). Alle Behandlungen werden nach höchsten Hygiene- und Sicherheitsstandards durchgeführt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie buche ich einen Termin?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Am einfachsten buchst du online über unser Treatwell-Buchungssystem unter trea.tw/EbJwgyW359U9x48DT. Du kannst uns auch telefonisch unter 076 582 70 05 oder per WhatsApp erreichen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wo befindet sich das Studio und wie komme ich hin?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Unser Studio befindet sich an der Eugenhuberstrasse 53, 8048 Zürich (Altstetten). Wir sind nur wenige Gehminuten vom S-Bahnhof Zürich Altstetten entfernt und gut erreichbar mit Bus (Linie 31, 80) und S-Bahn."
+                    }
+                }
+            ]
         }
         </script>
         <?php

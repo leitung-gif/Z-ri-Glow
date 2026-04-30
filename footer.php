@@ -47,7 +47,7 @@
             <div class="footer-membership">
                 <div class="footer-cert-badges">
                     <a href="https://www.sgmkverband.ch" target="_blank" rel="noopener" class="sgmk-badge" title="Mitglied beim Schweizerischen Gewerbeverband Medical Kosmetik">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/sgmk-logo.png' ); ?>" alt="SGMK Verband – Schweizerischer Gewerbeverband Medical Kosmetik" height="80" loading="lazy">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/sgmk-logo.png' ); ?>" alt="SGMK Verband – Schweizerischer Gewerbeverband Medical Kosmetik" width="200" height="80" loading="lazy">
                     </a>
                     <div class="vnissg-badge">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AD5A" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -107,8 +107,8 @@
             <p>Diese Website nutzt Google Fonts zur einheitlichen Darstellung von Schriften. Beim Aufruf einer Seite lädt dein Browser die benötigten Fonts direkt von Google-Servern. Dabei wird deine IP-Adresse an Google übermittelt. Weitere Informationen findest du in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</p>
             <h3>5. Google Maps</h3>
             <p>Wir nutzen auf unserer Website den Kartendienst Google Maps. Bei der Nutzung von Google Maps werden Daten über die Nutzung der Maps-Funktionen durch Website-Besucher an Google übermittelt und dort gespeichert.</p>
-            <h3>6. Terminbuchung (Calendly)</h3>
-            <p>Für die Online-Terminbuchung nutzen wir den Dienst Calendly. Wenn du einen Termin buchst, werden deine eingegebenen Daten (Name, E-Mail, Telefonnummer) von Calendly verarbeitet. Die Datenschutzerklärung von Calendly findest du unter <a href="https://calendly.com/privacy" target="_blank" rel="noopener">calendly.com/privacy</a>.</p>
+            <h3>6. Terminbuchung (Treatwell)</h3>
+            <p>Für die Online-Terminbuchung nutzen wir den Dienst Treatwell. Wenn du einen Termin buchst, werden deine eingegebenen Daten (Name, E-Mail, Telefonnummer) von Treatwell verarbeitet. Die Datenschutzerklärung von Treatwell findest du unter <a href="https://www.treatwell.ch/datenschutz/" target="_blank" rel="noopener">treatwell.ch/datenschutz</a>.</p>
             <h3>7. Kontaktaufnahme</h3>
             <p>Wenn du uns per E-Mail, Telefon oder WhatsApp kontaktierst, werden deine Angaben zur Bearbeitung deiner Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.</p>
             <h3>8. Deine Rechte</h3>
@@ -132,6 +132,18 @@
                 <button id="cookie-decline" class="btn btn-ghost cookie-btn">Nur notwendige</button>
             </div>
         </div>
+    </div>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="mobile-sticky-cta" id="mobile-sticky-cta">
+        <a href="tel:+41765827005" class="mobile-sticky-phone" aria-label="Anrufen">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>Anrufen</span>
+        </a>
+        <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="mobile-sticky-book">
+            <span>Termin Buchen</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
     </div>
 
     <?php wp_footer(); ?>

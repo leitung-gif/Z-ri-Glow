@@ -15,52 +15,6 @@ Tags: beauty, cosmetics, one-page, custom-theme
    Aesthetic: Bold Glamour — Magenta, Purple, Gold & Dark
    ═══════════════════════════════════════════════════════════════ */
 
-/* ─── Preloader ─── */
-.preloader {
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-    background: #0A0A0C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.preloader.hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.preloader-inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.preloader-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.preloader-ring {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    border: 2px solid rgba(200, 80, 192, 0.15);
-    border-top-color: #C850C0;
-    border-radius: 50%;
-    animation: preloaderSpin 1s linear infinite;
-}
-
-@keyframes preloaderSpin {
-    to { transform: rotate(360deg); }
-}
-
 /* ─── Design Tokens ─── */
 :root {
     /* Color Palette — BOLD, vibrant & glamorous */
@@ -2861,4 +2815,325 @@ body::after {
     background: var(--color-gold);
     color: #000;
     border-color: var(--color-gold);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SERVICES MARQUEE BAND
+   ═══════════════════════════════════════════════════════════════ */
+.marquee-band {
+    background: var(--color-charcoal);
+    padding: 18px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    animation: marqueeSlide 25s linear infinite;
+    width: max-content;
+    will-change: transform;
+}
+
+.marquee-track span {
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    padding: 0 12px;
+}
+
+.marquee-dot {
+    color: var(--color-gold) !important;
+    font-size: 0.6rem !important;
+    letter-spacing: 0 !important;
+    padding: 0 8px !important;
+}
+
+@keyframes marqueeSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DARK STATS SECTION
+   ═══════════════════════════════════════════════════════════════ */
+.stats-section {
+    background: linear-gradient(135deg, #1A0E28 0%, #2D1640 50%, #1A0E28 100%);
+    padding: var(--space-4xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200, 80, 192, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2xl);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--color-gold);
+    line-height: 1;
+    display: inline;
+}
+
+.stat-plus {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 300;
+    color: var(--color-gold);
+    line-height: 1;
+}
+
+.stat-rating {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+}
+
+.stats-tagline {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: var(--space-2xl);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xl);
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FAQ SECTION
+   ═══════════════════════════════════════════════════════════════ */
+.faq-section {
+    background: transparent;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(200, 80, 192, 0.08);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+    border-color: rgba(200, 80, 192, 0.2);
+}
+
+.faq-item.active {
+    border-color: var(--color-magenta);
+    box-shadow: var(--shadow-soft);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-lg) var(--space-xl);
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    text-align: left;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    background: none;
+    border: none;
+    line-height: 1.4;
+}
+
+.faq-question:hover {
+    color: var(--color-magenta);
+}
+
+.faq-question svg {
+    flex-shrink: 0;
+    color: var(--color-soft-gray);
+    transition: transform var(--transition-base), color var(--transition-fast);
+}
+
+.faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+    color: var(--color-magenta);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-out-expo), padding 0.4s var(--ease-out-expo);
+    padding: 0 var(--space-xl);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 0 var(--space-xl) var(--space-xl);
+}
+
+.faq-answer p {
+    font-size: 0.92rem;
+    color: var(--color-warm-gray);
+    line-height: 1.8;
+}
+
+.faq-answer a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.faq-answer a:hover {
+    color: var(--color-lavender-deep);
+}
+
+@media (max-width: 768px) {
+    .faq-question {
+        font-size: 0.95rem;
+        padding: var(--space-md) var(--space-lg);
+    }
+    .faq-answer {
+        padding: 0 var(--space-lg);
+    }
+    .faq-item.active .faq-answer {
+        padding: 0 var(--space-lg) var(--space-lg);
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STICKY MOBILE CTA BAR
+   ═══════════════════════════════════════════════════════════════ */
+.mobile-sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background: rgba(26, 20, 35, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    gap: 10px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .mobile-sticky-cta {
+        display: flex;
+    }
+    .whatsapp-widget {
+        bottom: 80px;
+    }
+    .cookie-consent {
+        bottom: 64px;
+    }
+}
+
+.mobile-sticky-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.mobile-sticky-phone:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+.mobile-sticky-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    padding: 12px 20px;
+    background: var(--gradient-magenta);
+    border-radius: 50px;
+    color: var(--color-white);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.mobile-sticky-book:hover {
+    box-shadow: var(--shadow-magenta);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   404 PAGE
+   ═══════════════════════════════════════════════════════════════ */
+.error-404 {
+    background: transparent;
 }

@@ -520,3 +520,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 })();
+
+// ═══════════════════════════════════════════════════════════════
+//  FAQ ACCORDION
+// ═══════════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function(item) {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+                // Close all others
+                faqItems.forEach(function(i) {
+                    i.classList.remove('active');
+                    const btn = i.querySelector('.faq-question');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                });
+                // Toggle current
+                if (!isActive) {
+                    item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+    });
+});
+
+// ═══════════════════════════════════════════════════════════════
+//  STATS COUNTER ANIMATION
+// ═══════════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', function() {
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    if (statNumbers.length === 0) return;
+
+    const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.dataset.target);
+                let current = 0;
+                const steps = 50;
+                const increment = target / steps;
+                const stepTime = 1500 / steps;
+
+                const timer = setInterval(function() {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = Math.round(current);
+                }, stepTime);
+
+                statsObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(function(el) {
+        statsObserver.observe(el);
+    });
+});
