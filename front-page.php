@@ -16,9 +16,9 @@
                         <span class="hero-title-accent">natürlichen Glow</span>
                     </h1>
                     <p class="hero-subtitle reveal-up" style="animation-delay: 0.3s">
-                        Dein Beauty Studio für perfekte Hautpflege in Zürich Altstetten. 
-                        Über 60 professionelle Behandlungen – von Hydrafacial über Microneedling 
-                        bis Permanent Make-up. Individuell auf dich abgestimmt.
+                        Dein Beauty Studio für perfekte Hautpflege in Zürich Altstetten.
+                        Über 60 professionelle Behandlungen – von dauerhafter Laser-Haarentfernung
+                        über Hydrafacial bis Permanent Make-up. Individuell auf dich abgestimmt.
                     </p>
                     <div class="hero-actions reveal-up" style="animation-delay: 0.45s">
                         <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="btn btn-primary" id="hero-book-btn">
@@ -80,22 +80,26 @@
         <!-- Services Marquee Band -->
         <div class="marquee-band">
             <div class="marquee-track">
+                <span>LASER HAARENTFERNUNG</span><span class="marquee-dot">✦</span>
                 <span>HYDRAFACIAL</span><span class="marquee-dot">✦</span>
                 <span>MICRONEEDLING</span><span class="marquee-dot">✦</span>
                 <span>PERMANENT MAKE-UP</span><span class="marquee-dot">✦</span>
                 <span>BB GLOW</span><span class="marquee-dot">✦</span>
                 <span>CHEMICAL PEELING</span><span class="marquee-dot">✦</span>
-                <span>MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>KRÄUTERSTEMPEL MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>LYMPHDRAINAGE</span><span class="marquee-dot">✦</span>
                 <span>HOT STONE</span><span class="marquee-dot">✦</span>
                 <span>WAXING</span><span class="marquee-dot">✦</span>
                 <span>LASH LIFTING</span><span class="marquee-dot">✦</span>
                 <span>BROW LIFTING</span><span class="marquee-dot">✦</span>
+                <span>LASER HAARENTFERNUNG</span><span class="marquee-dot">✦</span>
                 <span>HYDRAFACIAL</span><span class="marquee-dot">✦</span>
                 <span>MICRONEEDLING</span><span class="marquee-dot">✦</span>
                 <span>PERMANENT MAKE-UP</span><span class="marquee-dot">✦</span>
                 <span>BB GLOW</span><span class="marquee-dot">✦</span>
                 <span>CHEMICAL PEELING</span><span class="marquee-dot">✦</span>
-                <span>MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>KRÄUTERSTEMPEL MASSAGE</span><span class="marquee-dot">✦</span>
+                <span>LYMPHDRAINAGE</span><span class="marquee-dot">✦</span>
                 <span>HOT STONE</span><span class="marquee-dot">✦</span>
                 <span>WAXING</span><span class="marquee-dot">✦</span>
                 <span>LASH LIFTING</span><span class="marquee-dot">✦</span>
@@ -247,14 +251,50 @@
                         <div class="treatment-card-content">
                             <div class="treatment-card-number">04</div>
                             <h3>Body &amp; Massage</h3>
-                            <p>Entspannung für Körper und Seele: Unsere klassische Ganzkörpermassage, die wärmende Hot Stone Massage und die aktivierende Madero Therapie mit Holzinstrumenten sorgen für tiefe Muskelentspannung, Durchblutungsförderung und sichtbare Körperstraffung.</p>
+                            <p>Entspannung für Körper und Seele: Unsere klassische Ganzkörpermassage, die wärmende Hot Stone Massage und die aktivierende Madero Therapie mit Holzinstrumenten sorgen für tiefe Muskelentspannung, Durchblutungsförderung und sichtbare Körperstraffung. Neu auch mit Kräuterstempel Massage aus 100 % Bio-Kräutern und manueller Lymphdrainage.</p>
                             <ul class="treatment-features">
                                 <li>60–120 Min · ab CHF 130</li>
-                                <li>Hot Stone &amp; Madero Therapie</li>
-                                <li>Waxing Damen &amp; Herren</li>
+                                <li>Hot Stone, Kräuterstempel &amp; Madero</li>
+                                <li>Neu: Manuelle Lymphdrainage</li>
                             </ul>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laser Special Banner -->
+        <section id="laser" class="laser-special section">
+            <div class="container">
+                <div class="laser-special-card reveal-up">
+                    <span class="laser-special-badge">☀️ Sommer-Special – nur bis 31. Juli 2026</span>
+                    <h2 class="laser-special-title">
+                        Neu: Dauerhafte Haarentfernung<br>
+                        <em>mit dem Spark Pro Diodenlaser</em>
+                    </h2>
+                    <p class="laser-special-desc">
+                        Erlebe modernste Diodenlaser-Technologie für eine effektive, präzise und hautschonende
+                        Haarentfernung – mit maximalem Komfort dank innovativem Kühlsystem. Für nahezu alle
+                        Hauttypen geeignet, inklusive kostenloser und unverbindlicher Beratung vor jeder Behandlung.
+                    </p>
+                    <div class="laser-special-offer">
+                        <span class="laser-special-offer-label">Ganzkörper Damen</span>
+                        <span class="laser-special-price-old">CHF 399</span>
+                        <span class="laser-special-price">CHF 299</span>
+                    </div>
+                    <p class="laser-special-note">
+                        Das Angebot gilt für alle Buchungen bis zum 31. Juli 2026 –
+                        der Behandlungstermin kann auch später stattfinden.
+                    </p>
+                    <div class="laser-special-actions">
+                        <a href="https://trea.tw/EbJwgyW359U9x48DT" target="_blank" rel="noopener" class="btn btn-primary" id="laser-book-btn">
+                            <span>Jetzt Termin Sichern</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#preise" class="btn btn-ghost btn-ghost-light" data-price-tab="laser" id="laser-prices-btn">
+                            <span>Alle Laser-Preise</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -303,6 +343,7 @@
                 <!-- Price Tabs -->
                 <div class="price-tabs reveal-up" style="animation-delay: 0.25s" id="price-tabs">
                     <button class="price-tab active" data-tab="gesicht">Gesicht</button>
+                    <button class="price-tab" data-tab="laser">Laser</button>
                     <button class="price-tab" data-tab="needling">Needling &amp; Peeling</button>
                     <button class="price-tab" data-tab="body">Body &amp; Massage</button>
                     <button class="price-tab" data-tab="pmu">PMU</button>
@@ -357,6 +398,58 @@
                             <div class="price-row"><span>Lash Lifting inkl. Farbe</span><strong>CHF 85</strong></div>
                             <div class="price-row"><span>Augenbrauen zupfen &amp; färben</span><strong>CHF 45</strong></div>
                         </div>
+                    </div>
+
+                    <!-- LASER -->
+                    <div class="price-panel" data-panel="laser">
+                        <div class="price-group price-group-featured">
+                            <div class="price-group-header"><h3>☀️ Sommer-Special – nur bis 31. Juli 2026</h3><span class="price-badge">Special</span></div>
+                            <p class="price-group-desc">Ganzkörper Damen zum Aktionspreis: statt CHF 399 jetzt nur CHF 299. Das Angebot gilt für alle Buchungen bis zum 31. Juli 2026 – der Behandlungstermin kann auch später stattfinden.</p>
+                            <div class="price-row"><span>Ganzkörper Damen (statt CHF 399)</span><strong>CHF 299</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3><svg class="price-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2L12 16.4l-6.4 4.8L8 14l-6-4.8h7.6z"/></svg> Laser Haarentfernung Damen</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Dauerhafte Haarentfernung mit dem Spark Pro Diodenlaser der neuesten Generation – leistungsstark, präzise und hautschonend, mit maximalem Komfort dank modernem Kühlsystem. Für nahezu alle Hauttypen geeignet. Kostenlose und unverbindliche Beratung vor jeder Behandlung.</p>
+                            <div class="price-row"><span>Oberlippe</span><strong>CHF 35</strong></div>
+                            <div class="price-row"><span>Kinn</span><strong>CHF 35</strong></div>
+                            <div class="price-row"><span>Oberlippe + Kinn</span><strong>CHF 59</strong></div>
+                            <div class="price-row"><span>Gesicht komplett</span><strong>CHF 79</strong></div>
+                            <div class="price-row"><span>Achseln</span><strong>CHF 59</strong></div>
+                            <div class="price-row"><span>Unterarme</span><strong>CHF 79</strong></div>
+                            <div class="price-row"><span>Arme komplett</span><strong>CHF 129</strong></div>
+                            <div class="price-row"><span>Bikinilinie</span><strong>CHF 69</strong></div>
+                            <div class="price-row"><span>Intim komplett</span><strong>CHF 99</strong></div>
+                            <div class="price-row"><span>Intim + PoFalte</span><strong>CHF 119</strong></div>
+                            <div class="price-row"><span>Bauch</span><strong>CHF 69</strong></div>
+                            <div class="price-row"><span>Rücken</span><strong>CHF 119</strong></div>
+                            <div class="price-row"><span>Unterschenkel</span><strong>CHF 129</strong></div>
+                            <div class="price-row"><span>Oberschenkel</span><strong>CHF 139</strong></div>
+                            <div class="price-row"><span>Beine komplett</span><strong>CHF 249</strong></div>
+                            <div class="price-row"><span>Ganzkörper Damen</span><strong>CHF 399</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>⭐ Beliebte Kombi-Angebote</h3></div>
+                            <p class="price-group-desc">Kombiniere mehrere Zonen in einer Sitzung und profitiere von attraktiven Kombi-Preisen.</p>
+                            <div class="price-row"><span>Achseln + Intim</span><strong>CHF 149</strong></div>
+                            <div class="price-row"><span>Achseln + Intim + PoFalte</span><strong>CHF 169</strong></div>
+                            <div class="price-row"><span>Ganze Beine + Achseln + Intim</span><strong>CHF 329</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>👨 Laser Haarentfernung Herren</h3></div>
+                            <p class="price-group-desc">Dauerhafte Haarentfernung für den Mann – vom Bartkonturen-Styling bis zur Ganzkörperbehandlung. Effektiv auch bei kräftigerem Haar, sanft zur Haut dank innovativem Kühlsystem.</p>
+                            <div class="price-row"><span>Bartkonturen</span><strong>CHF 59</strong></div>
+                            <div class="price-row"><span>Nacken</span><strong>CHF 59</strong></div>
+                            <div class="price-row"><span>Brust</span><strong>CHF 89</strong></div>
+                            <div class="price-row"><span>Bauch</span><strong>CHF 89</strong></div>
+                            <div class="price-row"><span>Rücken</span><strong>CHF 129</strong></div>
+                            <div class="price-row"><span>Schultern</span><strong>CHF 89</strong></div>
+                            <div class="price-row"><span>Arme komplett</span><strong>CHF 129</strong></div>
+                            <div class="price-row"><span>Achseln</span><strong>CHF 69</strong></div>
+                            <div class="price-row"><span>Intimbereich</span><strong>CHF 99</strong></div>
+                            <div class="price-row"><span>Beine komplett</span><strong>CHF 299</strong></div>
+                            <div class="price-row"><span>Ganzkörper Herren</span><strong>CHF 499</strong></div>
+                        </div>
+                        <p class="price-note">Kostenlose und unverbindliche Beratung vor jeder Behandlung. V-NISSG zertifiziert.</p>
                     </div>
 
                     <!-- NEEDLING & PEELING -->
@@ -435,6 +528,20 @@
                             <div class="price-row"><span>90 Min</span><strong>CHF 210</strong></div>
                             <div class="price-row price-row-abo"><span>5× 60 Min (statt 850)</span><strong>CHF 790</strong></div>
                             <div class="price-row price-row-abo"><span>5× 90 Min (statt 1050)</span><strong>CHF 950</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>🌿 Kräuterstempel Massage</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Die Kraft der Natur – tiefe Entspannung für Körper, Geist und Seele. Handgebundene Kräuterstempel aus 100 % Bio-Kräutern, veredelt mit aussergewöhnlichen und hochwertigen Ölmischungen. Die wohltuende Wärme fördert die Entspannung, unterstützt die Durchblutung und schenkt der Haut ein gepflegtes, geschmeidiges Gefühl.</p>
+                            <div class="price-row"><span>60 Min</span><strong>CHF 145</strong></div>
+                            <div class="price-row"><span>90 Min</span><strong>CHF 195</strong></div>
+                            <div class="price-row"><span>120 Min</span><strong>CHF 245</strong></div>
+                        </div>
+                        <div class="price-group">
+                            <div class="price-group-header"><h3>💧 Manuelle Lymphdrainage</h3><span class="price-badge">Neu</span></div>
+                            <p class="price-group-desc">Leichtigkeit, Entgiftung, Wohlbefinden: Die sanfte, manuelle Lymphdrainage unterstützt das lymphatische System, fördert die Entstauung, reduziert Schwellungen und Wassereinlagerungen und stärkt das Immunsystem. Ideal bei müden Beinen, nach Operationen oder zur Regeneration.</p>
+                            <div class="price-row"><span>60 Min</span><strong>CHF 135</strong></div>
+                            <div class="price-row"><span>90 Min</span><strong>CHF 185</strong></div>
+                            <div class="price-row"><span>120 Min</span><strong>CHF 235</strong></div>
                         </div>
                         <div class="price-group">
                             <div class="price-group-header"><h3>🪵 Madero Therapie</h3></div>
@@ -899,6 +1006,15 @@
                         </button>
                         <div class="faq-answer">
                             <p>Unsere Gesichtsbehandlungen beginnen ab CHF 85 (Akne Schüler) bis CHF 240 (Signature Ritual). Die beliebteste Behandlung, das Hydra/Aquafacial, kostet CHF 150 (60–70 Min) oder CHF 180 als Deluxe-Version. Alle Preise findest du in unserer <a href="#preise">Preisliste</a>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Wie funktioniert die Laser-Haarentfernung bei Züri Glow?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Wir arbeiten mit dem Spark Pro Diodenlaser der neuesten Generation – für eine dauerhafte, präzise und hautschonende Haarentfernung mit maximalem Komfort dank innovativem Kühlsystem. Die Behandlung eignet sich für nahezu alle Hauttypen, und vor jeder Behandlung erhältst du eine kostenlose, unverbindliche Beratung. Die Preise beginnen ab CHF 35 – bis 31. Juli 2026 gibt es die Ganzkörper-Behandlung für Damen im Sommer-Special für CHF 299 statt CHF 399. Alle Preise findest du in unserer <a href="#preise">Preisliste</a>.</p>
                         </div>
                     </div>
                     <div class="faq-item">

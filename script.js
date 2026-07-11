@@ -272,6 +272,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Links with data-price-tab open the corresponding price tab
+    document.querySelectorAll('[data-price-tab]').forEach(link => {
+        link.addEventListener('click', () => {
+            const tab = document.querySelector(`.price-tab[data-tab="${link.dataset.priceTab}"]`);
+            if (tab) tab.click();
+        });
+    });
+
     // ─── Instagram Feed Slider ───
     const igTrack = document.getElementById('ig-slider-track');
     const igViewport = document.getElementById('ig-slider-viewport');

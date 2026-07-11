@@ -64,8 +64,8 @@ function zuriglow_meta_tags() {
     if ( is_front_page() ) {
         $theme_uri = get_template_directory_uri();
         ?>
-        <meta name="description" content="Züri Glow – dein Kosmetikstudio in Zürich Altstetten. Hydrafacial, Microneedling, PMU, Massagen & Waxing. V-NISSG zertifiziert. Über 60 Behandlungen. ☎ 076 582 70 05">
-        <meta name="keywords" content="Kosmetikstudio Zürich, Beauty Studio Altstetten, Gesichtsbehandlung Zürich, Hydrafacial Zürich, Microneedling Zürich, Permanent Make-up Zürich, PMU Zürich, Anti-Aging Zürich, Hautpflege Zürich, Waxing Zürich, Massage Zürich Altstetten, Kosmetikerin Zürich, SGMK Kosmetik, BB Glow Zürich, Chemical Peeling Zürich, Aknebehandlung Zürich, Braut Make-up Zürich, V-NISSG zertifiziert, Kosmetik Altstetten">
+        <meta name="description" content="Züri Glow – dein Kosmetikstudio in Zürich Altstetten. Laser-Haarentfernung, Hydrafacial, Microneedling, PMU, Massagen & Waxing. V-NISSG zertifiziert. Über 60 Behandlungen. ☎ 076 582 70 05">
+        <meta name="keywords" content="Kosmetikstudio Zürich, Beauty Studio Altstetten, Laser Haarentfernung Zürich, Diodenlaser Zürich, dauerhafte Haarentfernung Zürich, Gesichtsbehandlung Zürich, Hydrafacial Zürich, Microneedling Zürich, Permanent Make-up Zürich, PMU Zürich, Anti-Aging Zürich, Hautpflege Zürich, Waxing Zürich, Massage Zürich Altstetten, Lymphdrainage Zürich, Kräuterstempel Massage Zürich, Kosmetikerin Zürich, SGMK Kosmetik, BB Glow Zürich, Chemical Peeling Zürich, Aknebehandlung Zürich, Braut Make-up Zürich, V-NISSG zertifiziert, Kosmetik Altstetten">
         <meta name="author" content="Züri Glow Beauty Studio">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <link rel="canonical" href="https://zuriglow.ch/">
@@ -150,11 +150,11 @@ function zuriglow_structured_data() {
                 {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "20:00"},
                 {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "18:00"}
             ],
-            "priceRange": "CHF 30 – CHF 420",
+            "priceRange": "CHF 30 – CHF 499",
             "currenciesAccepted": "CHF",
             "paymentAccepted": "Cash, Credit Card, TWINT",
-            "description": "Züri Glow Beauty Studio in Zürich Altstetten – professionelle Gesichtsbehandlungen, Hydrafacial, Microneedling, Permanent Make-up, Massagen, Waxing und mehr. V-NISSG zertifiziert. Über 60 Behandlungen für strahlend schöne Haut.",
-            "knowsAbout": ["Gesichtsbehandlung", "Hydrafacial", "Microneedling", "Permanent Make-up", "Waxing", "Massage", "Anti-Aging", "Chemical Peeling", "BB Glow", "Aknebehandlung"],
+            "description": "Züri Glow Beauty Studio in Zürich Altstetten – dauerhafte Laser-Haarentfernung mit Diodenlaser, professionelle Gesichtsbehandlungen, Hydrafacial, Microneedling, Permanent Make-up, Massagen, Waxing und mehr. V-NISSG zertifiziert. Über 60 Behandlungen für strahlend schöne Haut.",
+            "knowsAbout": ["Laser-Haarentfernung", "Diodenlaser", "Gesichtsbehandlung", "Hydrafacial", "Microneedling", "Permanent Make-up", "Waxing", "Massage", "Manuelle Lymphdrainage", "Kräuterstempel-Massage", "Anti-Aging", "Chemical Peeling", "BB Glow", "Aknebehandlung"],
             "areaServed": [
                 {"@type": "City", "name": "Zürich"},
                 {"@type": "Place", "name": "Altstetten"},
@@ -207,6 +207,14 @@ function zuriglow_structured_data() {
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Unsere Gesichtsbehandlungen beginnen ab CHF 85 (Akne Schüler) bis CHF 240 (Signature Ritual). Die beliebteste Behandlung, das Hydra/Aquafacial, kostet CHF 150 (60–70 Min) oder CHF 180 als Deluxe-Version (75–90 Min)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie funktioniert die Laser-Haarentfernung bei Züri Glow?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Wir arbeiten mit dem Spark Pro Diodenlaser der neuesten Generation – für eine dauerhafte, präzise und hautschonende Haarentfernung mit maximalem Komfort dank innovativem Kühlsystem. Für nahezu alle Hauttypen geeignet, inklusive kostenloser Beratung vor jeder Behandlung. Preise ab CHF 35, Ganzkörper Damen CHF 399 (Sommer-Special bis 31. Juli 2026: CHF 299)."
                     }
                 },
                 {
